@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 				beautify: false
 			},
 			files: {
-				'assets/js/main.min.js': ['_/js/*.js']
+				'main.js': ['_/js/*.js']
 			}
 		}
 	},
