@@ -1,0 +1,94 @@
+@media (max-width: 575px) {
+	body{
+		p{
+			line-height: 1.8;
+		}
+	}
+	.who-i-am p{
+		text-align: left;
+	}
+
+	.custom-background > ul{
+		float: right;
+		margin: 0px 20px;
+	}
+	h1{
+		font-size: 28px;
+	}
+	h2{
+		font-size: 26px;
+	}
+	.who-i-am .linkedin {
+		margin-top: 50px;
+	}
+
+	.navbar-default .container-fluid{
+		width: 100%;
+	}
+
+	.nav.navbar-nav.mobile{
+		display: inline-block;
+		width: 80%;
+		padding-top: 3px;
+		margin: 0;
+		padding-right: 23px;
+		padding-left: 0px;
+		margin-top: 3px;
+	}
+
+	.mobile .social-share-bar {
+		width: 81%;
+		text-align: center;
+		margin: 0;
+		display: inline-block;
+	}
+
+
+	.navbar-default .mobile .social-share-bar a i.fa {
+		margin-left: 3px;
+		text-align: left;
+		display: block;
+		font-size: 24px;
+		line-height: 1.2;
+	}
+	.navbar-default .mobile .social-share-bar a i.fa.fa-facebook{
+		margin-left: 9px;
+		margin-top: 3px;
+	}
+
+	.navbar-default .mobile li.lang-item{
+		float: right;
+	}
+
+	.container-fluid.header{
+		.row.header_image{
+			position: absolute;
+			width: 100%;
+			height: 366px;
+			margin-top: 50px;
+			overflow: hidden;
+		}
+	}
+
+	.experiencia{
+		padding-right: 15px;
+		padding-left: 15px;
+		.colocation{
+			width: 100%;
+		}
+		.period {
+			width: 100%;
+			text-align: left;
+			margin-top: 10px;
+			margin-bottom: 0;
+		}
+	}
+
+	.navbar-default .social-share-bar a{
+		height: 32px;
+		width: 34px;
+	}
+	.navbar-default .social-share-bar .social {
+		width: 36px;
+	}
+}
