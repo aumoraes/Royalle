@@ -1,156 +1,83 @@
-@font-face {
-	font-family: 'icomoon';
-	src:  url('_/fonts/icomoon/fonts/icomoon.eot?ji39x6');
-	src:  url('_/fonts/icomoon/fonts/icomoon.eot?ji39x6#iefix') format('embedded-opentype'),
-		url('_/fonts/icomoon/fonts/icomoon.ttf?ji39x6') format('truetype'),
-		url('_/fonts/icomoon/fonts/icomoon.woff?ji39x6') format('woff'),
-		url('_/fonts/icomoon/fonts/icomoon.svg?ji39x6#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+.header {
+  color: #ffffff;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1.4;
+.header_nav {
+  height: 90px;
+  background-color: rgba(34, 162, 225, 0.9);
+  .wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .header_logo {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    margin-top: 20px;
+    height: auto;
+    width: 246px;
+  }
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  .header_content {
+    float: right;
+    .menu-header-menu-container {
+      float: left;
+      .menu {
+        float: left;
+        .menu-item {
+          line-height: 90px;
+          height: 87px;
+          margin-right: 20px;
+          display: inline-block;
+          transition: 0.5s ease-in-out;
+          border-bottom: 3px solid transparent;
+          text-transform: lowercase;
+          a {
+            color: #ffffff;
+            display: block;
+            text-transform: uppercase;
+          }
+        }
+        .menu-item:hover {
+          border-bottom: 3px solid #ffffff;
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+
+
+
+
+
+
+    .header_contact {
+      float: left;
+      font-size: 14px;
+      margin-top: 25px;
+      padding-left: 25px;
+      border-left: 1px solid #ffffff;
+      .header_telephone {
+        font-size: 20px;
+        .header_icon {
+          color: #ffffff;
+        }
+        .header_number {
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 0.71;
+          small {
+            font-size: 14px;
+            margin: 0 5px 0 13px;
+            position: relative;
+            top: -3px;
+
+          }
+        }
+      }
+      .header_email {
+        margin-top: 10px;
+        opacity: 0.7;
+      }
+    }
+  }
 }
-
-.icon-hackerrank:before {
-	content: "\e900";
-}
-.icon-facebook:before {
-	content: "\ea90";
-}
-.icon-instagram:before {
-	content: "\ea92";
-}
-.icon-github:before {
-	content: "\eab0";
-}
-
-
-
-.navbar{
-	margin-bottom: 0px;
-	position: fixed;
-	width: 100%;
-	z-index: 10;
-}
-.navbar-default{
-
-	.container-fluid{
-		float: initial;
-	}
-	.navbar-nav{
-		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
-		.page-link {
-			text-transform: uppercase;
-			padding: 10px 5px;
-			border-bottom: 1px solid #ccc;
-			margin-left: 15px;
-		}
-	}
-
-	.navbar-nav>li>a{
-		padding: 0;
-		margin: 0;
-	}
-
-	.social-share-bar {
-		margin-right: 10px;
-		margin-top: 4px;
-		width: 81%;
-		display: inline-block;
-		.social{
-			width: 41px;
-			margin-right: 10px;
-			display: inline-block;
-		}
-			a {
-					border: 2px solid transparent;
-					border-radius: 100%;
-					display: inline-block;
-					font-size: 18px;
-					height: 39px;
-					line-height: 39px;
-					position: relative;
-					transition: all 0.5s ease 0s;
-					vertical-align: top;
-					width: 39px;
-					i.fa{
-						color: $color-share-social;
-						font-size: 26px;
-						margin-left: 5px;
-					}
-			}
-			a::before {
-					border: 2px solid $color-share-social;
-					border-radius: 100%;
-					bottom: -4px;
-					content: "";
-					left: -4px;
-					opacity: 1;
-					position: absolute;
-					right: -4px;
-					top: -4px;
-					transform: scale(1);
-			}
-			a:hover{
-				text-decoration: none;
-				color: $color-share-social-hover;
-				border-color: $color-share-social-hover;
-				-webkit-box-shadow: 0 0 12px transparent;
-				-moz-box-shadow: 0 0 12px transparent;
-				box-shadow: 0 0 12px transparent;
-				i.fa{
-					text-decoration: none;
-					color: $color-share-social-hover;
-					border-color: $color-share-social-hover;
-					-webkit-box-shadow: 0 0 12px transparent;
-					-moz-box-shadow: 0 0 12px transparent;
-					box-shadow: 0 0 12px transparent;
-				}
-			}
-			a:hover:before {
-				border-color: #fff;
-				-webkit-transform: scale(1.4);
-				-moz-transform: scale(1.4);
-				-ms-transform: scale(1.4);
-				-o-transform: scale(1.4);
-				transform: scale(1.4);
-				opacity: 0;
-				filter: alpha(opacity=0);
-				-webkit-transition: 0.4s;
-				-moz-transition: 0.4s;
-				-o-transition: 0.4s;
-				transition: 0.4s;
-			}
-		}
-
-}
-.language-flag{
-	float: right;
-}
-.language-flag.mobile {
-	display: none;
-}
-.language-flag img {
-	width: 42px;
-}
-
-
-// .icon-brand:before {
-// 	content: "\e900";
-// 	color: #2ec866;
-// }

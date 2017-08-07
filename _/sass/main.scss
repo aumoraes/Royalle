@@ -11,36 +11,20 @@ Text Domain: mokaeventos
 
 
 
-@import "partials/variables";
-@import "partials/general";
-@import "modules/header";
-@import "modules/footer";
-@import "modules/home";
-@import "modules/menu";
-@import "responsible/mobile";
-
-
+// @import "partials/variables";
+// @import "partials/general";
+// @import "modules/header";
+// @import "modules/footer";
+// @import "modules/home";
+ @import "partials/reset";
+ @import "modules/font";
+ @import "modules/menu";
+// @import "responsible/mobile";
 
 body{
-	background-attachment: fixed;
-	background-color: $body-bakground;
-	background-position: 50% 0;
-	background-repeat: no-repeat;
-	padding: 0;
-	background-size: cover;
-	font-family: $font-family !important;
-}
+  font-family: $font-family;
 
-h1{
-	font-weight: bolder;
-	margin-top: 68px;
 }
-h2{
-	font-weight: lighter;
-	margin-top: 5px;
-	margin-bottom: -5px;
-}
-
-p{
-	font-size: 17px;
+a {
+    text-decoration: none;
 }

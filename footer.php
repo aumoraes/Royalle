@@ -14,11 +14,11 @@
 
 ?>
 
-		<div id="footer" class="clearfix">
+		<!-- <div id="footer" class="clearfix">
 			<div class="footer-copy">
 				<p class="copyright">© <?php echo date("Y"); ?> <a href="http://aumoraes.com" rel="home">Aurélio de Moraes</a></p>
 			</div>
-		</div>
+		</div> -->
 	</div> <!-- .wrap (index)-->
 </div> <!-- <div class="container-fluid header"> (header)-->
 
