@@ -21,9 +21,8 @@
     <header class="header">
       <div class="header_nav">
         <div class="wrapper">
-
           <a href="<?php echo esc_url( site_url() ); ?>">
-            <img src="<?php bloginfo( 'template_directory' );?>/assets/images/logo.png" alt="" class="header_logo">
+            <img src="<?php bloginfo( 'template_directory' );?>/assets/images/logo2.png" alt="" class="header_logo">
           </a>
 
           <div class="header_content">
