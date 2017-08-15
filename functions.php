@@ -39,7 +39,8 @@ function aumoraes_widgets_init() {
 function register_my_menus() {
 	register_nav_menus(
 		array(
-			'header-menu' => __( 'Header Menu' ),
+			'header-menu-1' => __( 'Header Menu 1' ),
+			'header-menu-2' => __( 'Header Menu 2' ),
 		)
 	);
 }

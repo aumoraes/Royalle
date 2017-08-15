@@ -17,14 +17,37 @@ Text Domain: mokaeventos
 // @import "modules/footer";
 // @import "modules/home";
  @import "partials/reset";
- @import "modules/font";
+ //@import "modules/font";
  @import "modules/menu";
-// @import "responsible/mobile";
-
-body{
-  font-family: $font-family;
-
+ @import "responsible/mobile";
+@import "modules/base";
+//@import "modules/responsible";
+.wrap{
+  height: 1080px;
 }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(https://static.wixstatic.com/media/5caedb_397571f19c5941869a66d820c60ca1f5~mv2_d_2670_1635_s_2.jpg/v1/fill/w_1920,h_1176,al_c,q_85,usm_0.66_1.00_0.01/5caedb_397571f19c5941869a66d820c60ca1f5~mv2_d_2670_1635_s_2.webp);
+  color: #505050;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-weight: 300; }
+
 a {
-    text-decoration: none;
-}
+  text-decoration: none;
+  color: #c80032; }
+
+a:hover {
+  color: #7c001f; }
