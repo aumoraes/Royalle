@@ -1,0 +1,28 @@
+body{
+  &.open{
+    overflow: hidden;
+  }
+}
+
+.shadow{
+
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 999;
+  position: fixed;
+  display: none;
+}
+
+.sidebar-menu{
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  background: #fff;
+  width: 85%;
+  height: 100%;
+  margin-left: -85%;
+
+
+
+}

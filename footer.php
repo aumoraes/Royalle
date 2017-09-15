@@ -24,38 +24,45 @@
 
 <?php wp_footer(); ?>
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
 </script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js">
-</script>
+</script> -->
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script  src='<?php echo get_stylesheet_directory_uri();?>/main.js?v=1.0.0'></script>
+		<script  src='<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.touchSwipe.min.js'></script>
+
 
 
 <script>
-	$(window).scroll(function() {
-	  if ($(document).scrollTop() > 50) {
-	    $('#main-nav').addClass('scroll');
-	  } else {
-	    $('#main-nav').removeClass('scroll');
-	  }
-	});
+	// $(window).scroll(function() {
+	//   if ($(document).scrollTop() > 50) {
+	//     $('#main-nav').addClass('scroll');
+	//   } else {
+	//     $('#main-nav').removeClass('scroll');
+	//   }
+	// });
 </script>
 <script>
-		$(document).ready(function(){
-				$("#nav-mobile").html($("#nav-main").html());
-				$("#nav-trigger span").click(function(){
-						if ($("nav#nav-mobile ul").hasClass("expanded")) {
-								$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-								$(this).removeClass("open");
-						} else {
-								$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-								$(this).addClass("open");
-						}
-				});
-		});
+		// $(document).ready(function(){
+		// 		$("#nav-mobile").html($("#nav-main").html());
+		// 		$("#nav-trigger span").click(function(){
+		// 				if ($("nav#nav-mobile ul").hasClass("expanded")) {
+		// 						$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+		// 						$(this).removeClass("open");
+		// 				} else {
+		// 						$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+		// 						$(this).addClass("open");
+		// 				}
+		// 		});
+		//});
 </script>
 
 

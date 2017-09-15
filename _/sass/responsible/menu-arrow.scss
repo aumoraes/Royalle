@@ -1,0 +1,67 @@
+$arrow_color: #cecece;
+$arrow_height: 4px;
+$arrow_width: 30px;
+$arrow_top_before: -10px;
+$arrow_top_after: 10px;
+
+@mixin btn() {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transition-duration: 0.5s;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+@mixin icon() {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $arrow_height;
+  width: $arrow_width;
+  top: 10px;
+  background-color: $arrow_color;
+}
+
+@mixin icon-before() {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $arrow_width;
+  height: $arrow_height;
+  background-color: $arrow_color;
+  content: "";
+  top: $arrow_top_before;
+}
+
+@mixin icon-after() {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $arrow_width;
+  height: $arrow_height;
+  background-color: $arrow_color;
+  content: "";
+  top: $arrow_top_after;
+}
+
+
+.btn-mobile{
+  @include btn();
+
+  .icon {
+    @include icon();
+
+    &:before{
+      @include icon-before();
+    }
+
+    &:after{
+      @include icon-after();
+    }
+  }
+
+  &.open {
+    
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

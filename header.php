@@ -11,6 +11,8 @@
     <link rel='stylesheet' id='style'  href='<?php echo get_stylesheet_directory_uri();?>/style.css?v=1.0.0' type='text/css' media='all' />
 
 
+
+
     <?php wp_head(); ?>
   </head>
 
@@ -18,4 +20,5 @@
 
     <?php
     include_once "menu.php";
+    include_once "sidebar-menu.php";
     ?>

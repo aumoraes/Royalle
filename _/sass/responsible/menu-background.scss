@@ -1,0 +1,32 @@
+$background_color: #fff;
+
+header{
+  position: fixed;
+  box-shadow: 0 2px 5px rgba(100,100,100,.1);
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 14px 0 15px;
+  padding-bottom: 18px;
+  background: $background_color;
+
+  &.border-bottom {
+    border-bottom: 1px solid #eee;
+  }
+
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    .logo-mobile{
+      
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

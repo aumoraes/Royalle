@@ -18,10 +18,15 @@ Text Domain: mokaeventos
 // @import "modules/home";
  @import "partials/reset";
  //@import "modules/font";
- @import "modules/menu";
- @import "responsible/mobile";
-@import "modules/base";
-//@import "modules/responsible";
+ //@import "modules/menu";
+ @import "responsible/menu-arrow";
+ @import "responsible/menu-background";
+ @import "responsible/menu-sidebar";
+
+ @import "responsible/sidebar-menu";
+
+//@import "modules/base";
+@import "modules/responsible";
 .wrap{
   height: 1080px;
 }
