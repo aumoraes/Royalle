@@ -8,7 +8,7 @@
     <link rel="icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.png" type="image/x-icon">
 	  <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.png" type="image/x-icon">
 
-    <link rel='stylesheet' id='style'  href='<?php echo get_stylesheet_directory_uri();?>/style.css?v=1.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='style'  href='<?php echo get_stylesheet_directory_uri();?>/style.css' type='text/css' media='all' />
 
 
 

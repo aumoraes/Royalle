@@ -5,7 +5,6 @@ body{
 }
 
 .shadow{
-
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,0.6);
@@ -21,8 +20,54 @@ body{
   background: #fff;
   width: 85%;
   height: 100%;
-  margin-left: -85%;
+  //margin-left: -85%;
+}
+
+.sidebar-header{
+  height: 120px;
+  border-bottom: 1px solid #f3f1ee;
+  overflow: hidden;
+  padding: 0px 15px;
+  .sidebar-header-logo{
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    height: 120px;
+    img{
+      vertical-align: middle;
+    }
+  }
+  .sidebar-header-image{
+    width: 50%;
+    display: table-cell;
+    height: 120px;
+    position: relative;
+    vertical-align: bottom;
+    padding-left: 28px;
+    img{
+      margin-bottom: -13px;
+    }
+  }
+}
 
 
+.sidebar-category{
+  padding: 15px 30px;
+  .menu-item{
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    display: block;
+    padding: 13px 0;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 23px;
+    letter-spacing: 0.015em;
+    color: #5b5855;
+    font-weight: 400;
+  }
+}
 
+.sidebar-footer{
+  text-align: center;
 }
