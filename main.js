@@ -1,11 +1,17 @@
 
 $(function() {
-  $("body, .shadow, .sidebar-menu").swipe( {
+  $(".swipe-sidebar").swipe( {
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
       if(direction === "right"){
         openMenu();
-      }else if(direction === "left"){
+      }
+    }
+  });
+  $("body, .shadow, .sidebar-menu").swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      if(direction === "left"){
         closeMenu();
       }
     }

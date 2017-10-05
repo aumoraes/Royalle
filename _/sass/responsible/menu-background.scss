@@ -6,8 +6,6 @@ header{
   top: 0;
   z-index: 999;
   width: 100%;
-  padding: 14px 0 15px;
-  padding-bottom: 18px;
   background: $background_color;
 
   &.border-bottom {
@@ -15,15 +13,14 @@ header{
   }
 
   .container {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px 25px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
 
     .logo-mobile{
-      
-
+      display: inline-block;
+      float: right;
       img{
         width: 100%;
       }

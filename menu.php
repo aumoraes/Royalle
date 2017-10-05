@@ -4,6 +4,8 @@
       <div class="icon"></div>
     </div>
 
-	  <a class="logo-mobile" href="/"><img src="http://cdn.thefoodlens.com/wp-content/themes/thefoodlens/library/images/logo.svg"></a>
+	  <a class="logo-mobile" href="/">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-full-mobile.png" alt="royalleeventos" >
+		</a>
 	</div>
 </header>

@@ -13,14 +13,20 @@ body{
   display: none;
 }
 
-.sidebar-menu{
+.swipe-sidebar{
+  z-index: 999;
+  position: fixed;
+  width: 25px;
   height: 100%;
+}
+
+.sidebar-menu{
   z-index: 9999;
   position: fixed;
   background: #fff;
   width: 85%;
   height: 100%;
-  //margin-left: -85%;
+  margin-left: -85%;
 }
 
 .sidebar-header{
@@ -28,24 +34,14 @@ body{
   border-bottom: 1px solid #f3f1ee;
   overflow: hidden;
   padding: 0px 15px;
+  background: url('http://royalleeventos.com.br/wp-content/uploads/2017/10/menu-background.jpg');
+  background-repeat: no-repeat;
   .sidebar-header-logo{
-    width: 50%;
     display: table-cell;
     vertical-align: middle;
     height: 120px;
     img{
       vertical-align: middle;
-    }
-  }
-  .sidebar-header-image{
-    width: 50%;
-    display: table-cell;
-    height: 120px;
-    position: relative;
-    vertical-align: bottom;
-    padding-left: 28px;
-    img{
-      margin-bottom: -13px;
     }
   }
 }
