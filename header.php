@@ -7,6 +7,10 @@
     <title><?php bloginfo('name'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon/favicon.ico" type="image/x-icon">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+
     <?php wp_head(); ?>
   </head>
 
@@ -14,5 +18,8 @@
 
     <?php
     include_once "menu.php";
+
     include_once "sidebar-menu.php";
+
+    include_once "slider.php";
     ?>

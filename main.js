@@ -1,5 +1,14 @@
 
 $(function() {
+
+  $('.slider').bxSlider({
+    mode: 'fade',
+    infiniteLoop: true,
+    pager: true,
+    auto:true,
+    slideWidth: "970"
+  });
+
   $(".swipe-sidebar").swipe( {
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -16,6 +25,9 @@ $(function() {
       }
     }
   });
+
+
+
 });
 $('.menu').click(function(){
   openMenu();

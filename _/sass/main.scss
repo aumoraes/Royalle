@@ -27,6 +27,7 @@ Text Domain: mokaeventos
 
 //@import "modules/base";
 @import "modules/responsible";
+@import "modules/slider";
 .wrap{
   height: 1080px;
 }
@@ -56,4 +57,5 @@ a {
 }
 
 a:hover {
-  color: #7c001f; }
+  color: #7c001f;
+}
