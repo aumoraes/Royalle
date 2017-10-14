@@ -47,7 +47,6 @@
       <p class="sidebar-footer-image">
         <img alt="ROYALLE_BARRAQUINHAS" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/barracas-mobile.png" />
       </p>
-
     </div>
   </div>
 </div>
