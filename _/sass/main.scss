@@ -17,7 +17,7 @@ Text Domain: mokaeventos
 // @import "modules/footer";
 // @import "modules/home";
  @import "partials/reset";
- //@import "modules/font";
+ @import "modules/font";
  //@import "modules/menu";
  @import "responsible/menu-arrow";
  @import "responsible/menu-background";
@@ -28,6 +28,7 @@ Text Domain: mokaeventos
 //@import "modules/base";
 @import "modules/responsible";
 @import "modules/slider";
+@import "responsible/footer-contato-mobile";
 .wrap{
   height: 1080px;
 }

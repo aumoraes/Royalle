@@ -1,0 +1,28 @@
+
+@media screen and (max-width: 768px) {
+  .footer-contato{
+    color: #fff;
+    position: absolute;
+    width: 140px;
+    right: 0;
+    margin-right: 15px;
+    border-radius: 5px;
+    text-align: center;
+    bottom: 25px;
+    .email-icon, .mensagem{
+      height: 30px;
+    }
+    .email-icon{
+      width: 25%;
+      display: inline-block;
+      background-color: #494949;
+      border-radius: 5px 0px 0px 5px;
+    }
+    .mensagem{
+      width: 75%;
+      float: right;
+      background-color: #555555;
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+}
