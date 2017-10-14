@@ -3,9 +3,9 @@
 <div class="sidebar-menu">
   <div class="container">
     <div class="sidebar-header">
-      <a href="/" class="sidebar-header-logo" target="_self">
+      <p class="sidebar-header-logo">
         <img alt="ROYALLE" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/logo-royalle-mobile.png" />
-      </a>
+      </p>
     </div>
     <div class="sidebar-category">
       <ul class="sidebar float">
@@ -45,7 +45,7 @@
 
     <div class="sidebar-footer">
       <p class="sidebar-footer-image">
-        <img alt="ROYALLE_MAN" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/barraca-transparente-mobile.png" />
+        <img alt="ROYALLE_BARRAQUINHAS" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/barracas-mobile.png" />
       </p>
 
     </div>

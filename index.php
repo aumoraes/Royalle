@@ -13,7 +13,7 @@
 get_header(); ?>
 
 
-<div class="wrap" id="about" >
+<div class="wrap" id="geral" >
 
 
 	<?php get_footer();
