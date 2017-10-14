@@ -4,14 +4,8 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php wp_title(); ?></title>
-    <link rel="icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.png" type="image/x-icon">
-	  <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.png" type="image/x-icon">
-
-    <link rel='stylesheet' id='style'  href='<?php echo get_stylesheet_directory_uri();?>/style.css' type='text/css' media='all' />
-
-
-
+    <title><?php bloginfo('name'); ?></title>
+    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon/favicon.ico" type="image/x-icon">
 
     <?php wp_head(); ?>
   </head>

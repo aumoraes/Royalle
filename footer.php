@@ -34,36 +34,8 @@
 </script> -->
 
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
     <script  src='<?php echo get_stylesheet_directory_uri();?>/main.js?v=1.0.0'></script>
-		<script  src='<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.touchSwipe.min.js'></script>
 
-
-
-<script>
-	// $(window).scroll(function() {
-	//   if ($(document).scrollTop() > 50) {
-	//     $('#main-nav').addClass('scroll');
-	//   } else {
-	//     $('#main-nav').removeClass('scroll');
-	//   }
-	// });
-</script>
-<script>
-		// $(document).ready(function(){
-		// 		$("#nav-mobile").html($("#nav-main").html());
-		// 		$("#nav-trigger span").click(function(){
-		// 				if ($("nav#nav-mobile ul").hasClass("expanded")) {
-		// 						$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-		// 						$(this).removeClass("open");
-		// 				} else {
-		// 						$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-		// 						$(this).addClass("open");
-		// 				}
-		// 		});
-		//});
-</script>
 
 
 </body>
