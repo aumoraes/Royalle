@@ -48,6 +48,7 @@ $(function() {
           $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'none');
           $('.form-contato-mobile #ajax_contact_msg').css('display', 'block');
           $('form[name="formContato"]')[0].reset();
+          window.scrollTo(0, 0);
          }
       });
     return false;
