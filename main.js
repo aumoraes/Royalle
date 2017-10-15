@@ -1,6 +1,10 @@
 
 $(function() {
 
+
+
+
+
   $('.slider').bxSlider({
     mode: 'fade',
     infiniteLoop: true,
@@ -55,11 +59,22 @@ $(function() {
 
 });
 
-$('.footer-contato-mobile').click(function(){
+$("#modal-launcher, #modal-background, #modal-close").click(function () {
+
+
   $("body, .sidebar-menu").addClass("open");
   $(".shadow").css('opacity',0).show().animate({opacity:1});
   $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
+
+  $("#modal-content,#modal-background").toggleClass("active");
+
 });
+
+// $('.footer-contato-mobile').click(function(){
+//   $("body, .sidebar-menu").addClass("open");
+//   $(".shadow").css('opacity',0).show().animate({opacity:1});
+//   $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
+// });
 
 $('.menu').click(function(){
   openMenu();

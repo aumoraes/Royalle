@@ -1,5 +1,4 @@
-<div class="footer-contato-mobile">
-
+<div id="modal-launcher" class="footer-contato-mobile">
 
   <p class="email-icon">
     <span class="icon-envelop">
