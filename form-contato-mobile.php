@@ -13,7 +13,7 @@
   <div  id="ajax_contact_msg" class="col-sm-4 col-xs-12  text-xs-center">
   <span id="msg"></span>
 
-  <button id="botao-home" class="ui-btn ui-corner-all">Button</button>
+  <button id="botao-home" class="ui-btn ui-corner-all">Continuar Navegando</button>
   </div>
 
   <form name="formContato" action="//royalleeventos.com.br/send-email.php" method="POST" class="formContato">
