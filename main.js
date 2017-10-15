@@ -40,7 +40,7 @@ $(function() {
          },
           success: function (response) {
             if( response ){
-              $('#ajax_contact_msg #msg').html( "Sua mensagem foi recebida por nós, vamos responder em breve" );
+              $('#ajax_contact_msg #msg').html( "Sua mensagem foi recebida por nós, vamos responder em breve." );
             } else {
               $('#ajax_contact_msg #msg').html( "Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato." );
             }
