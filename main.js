@@ -56,6 +56,7 @@ $(function() {
 });
 
 $("#modal-launcher, #modal-background, #modal-close").click(function () {
+  $( "body" ).scrollTop( 0 );
   $(".shadow").css('opacity',0).show().animate({opacity:1});
   $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
   $("#modal-content,#modal-background").toggleClass("active");
