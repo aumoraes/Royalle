@@ -26,7 +26,7 @@ $(function() {
     }
   });
 
-  //AJAX CONTACT FORM...
+  //AJAX CONTACT FORM Contato...
   $('form[name="formContato"]').submit(function () {
     var This = $(this);
       var action = $(This).attr('action');
@@ -48,6 +48,36 @@ $(function() {
           $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'none');
           $('.form-contato-mobile #ajax_contact_msg').css('display', 'block');
           $('form[name="formContato"]')[0].reset();
+          window.scrollTo(0, 0);
+         }
+      });
+    return false;
+  });
+
+
+  //AJAX CONTACT FORM...
+  $('form[name="formOrcamento"]').submit(function () {
+    var This = $(this);
+      var action = $(This).attr('action');
+      var data_value = unescape($(This).serialize());
+      $.ajax({
+         type: "POST",
+         url:action,
+         data: data_value,
+         error: function (xhr, status, error) {
+           confirm('Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato.');
+         },
+          success: function (response) {
+            console.log("********* " + response);
+            if( response ){
+              //$('#ajax_contact_msg #msg').html( "Sua mensagem foi recebida por nós, vamos responder em breve." );
+            } else {
+              //$('#ajax_contact_msg #msg').html( "Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato." );
+            }
+
+          // $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'none');
+          // $('.form-contato-mobile #ajax_contact_msg').css('display', 'block');
+          // $('form[name="formContato"]')[0].reset();
           window.scrollTo(0, 0);
          }
       });
