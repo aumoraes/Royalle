@@ -17,11 +17,18 @@
   <a href="tel:011965881509">
     <button id="ligar-agora" class="ui-btn ui-corner-all">Ligar Agora</button>
   </a>
-
-  <a href="https://api.whatsapp.com/send?phone=011965881509">
+  <a href="https://api.whatsapp.com/send?phone=55011965881509">
     <button id="whatsapp" class="ui-btn ui-corner-all">Enviar mensagem no whats</button>
   </a>
+  <br />
+  <p class="item">
+    E-mail: <a href="mailto:contato@royalleeventos.com.br">contato@royalleeventos.com.br</a>
+  </p>
 
+  <p class="item form-btn">
+    Você também pode usar o formulário do site.
+    <button class="ui-btn ui-corner-all" onclick="openModal('form-contato-mobile', true, 'modal-contato')">Usar formulário do site</button>
+  </p>
 
 
 
