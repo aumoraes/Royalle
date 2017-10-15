@@ -16,12 +16,12 @@
             <span class="arrow"></span>
           </li>
           <li>
-            <a href="#contato" class="menu-item contato-menu-item" onclick="openModal('modal-contato')">
+            <a href="#contato" class="menu-item contato" onclick="openModal('modal-contato')">
               contato
             </a>
           </li>
           <li>
-            <a href="/orcamento" class="menu-item orcamento" target="_self">
+            <a href="/orcamento" class="menu-item orcamento-menu-item" target="_self">
               orçamento
             </a>
           </li>
