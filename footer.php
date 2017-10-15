@@ -16,12 +16,39 @@
 <?php
 include_once "footer-contato-mobile.php";
 ?>
-		<!-- <div id="footer" class="clearfix">
-			<div class="footer-copy">
-				<p class="copyright">© <?php //echo date("Y"); ?> <a href="http://aumoraes.com" rel="home">Aurélio de Moraes</a></p>
+
+
+	<div id="footer" class="clearfix">
+
+		<div class="footer-social-media">
+			<div class="facebook">
+				<a href='https://www.facebook.com/RoyalleBarraquinhas/' target="_blank">
+					<span class="icon-facebook"></span>
+				</a>
 			</div>
-		</div> -->
-	</div> <!-- .wrap (index)-->
+
+			<div class="instagram">
+				<a href='https://www.instagram.com/royalle_eventos/' target="_blank">
+					<span class="icon-instagram"></span>
+				</a>
+			</div>
+
+			<div class="whatsapp">
+			<a href="https://api.whatsapp.com/send?phone=55011965881509" target="_blank">
+		    <span class="icon-whatsapp"></span>
+		  </a>
+			</div>
+
+		</div>
+
+		<div class="footer-copy">
+			<p class="copyright">© <?php echo date("Y"); ?> <a href="http://royalleeventos.com.br" rel="home">Royalle Eventos</a></p>
+		</div>
+	</div>
+
+
+
+</div> <!-- .wrap (index)-->
 
 
 <?php wp_footer(); ?>
