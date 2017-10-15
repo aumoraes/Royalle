@@ -26,11 +26,6 @@ $(function() {
     }
   });
 
-  $("body, .sidebar-menu").addClass("open");
-  $(".shadow").css('opacity',0).show().animate({opacity:1});
-  $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
-
-
   //AJAX CONTACT FORM...
   $('form[name="formContato"]').submit(function () {
     var This = $(this);

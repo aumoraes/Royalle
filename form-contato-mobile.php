@@ -19,10 +19,10 @@
   <form name="formContato" action="//royalleeventos.com.br/send-email.php" method="POST" class="formContato">
 
     <label for="nome">Nome *</label>
-    <input type="text" data-clear-btn="true" name="nome">
+    <input type="text" data-clear-btn="true" name="nome" required>
 
     <label for="email">Email *</label>
-    <input type="text" data-clear-btn="true" name="email">
+    <input type="text" data-clear-btn="true" name="email" required>
 
     <label for="nome">Mensagem *</label>
     <textarea data-autogrow="false" name="mensagem" rows="100" data-clear-btn="true" class="textarea-contato" required></textarea>
