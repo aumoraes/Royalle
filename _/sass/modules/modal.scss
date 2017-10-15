@@ -40,13 +40,33 @@
 
 }
 
-#ajax_contact_msg {
+#ajax_contact_msg{
   color: #498d00;
   margin-top: 20px;
   width: 100%;
   text-align: center;
   font-weight: bold;
   display: none;
+}
+#ajax_budget_msg {
+  color: #498d00;
+  margin-top: 20px;
+  width: 93%;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  z-index: 999;
+  position: fixed;
+  height: 150px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 1px 10px 5px #2c5500;
+  padding: 10px;
+  #botao-home{
+    position: initial;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
 
 #botao-home{

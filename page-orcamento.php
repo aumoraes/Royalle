@@ -5,9 +5,13 @@ get_header(); ?>
 
 <div class="orcamento">
 
-<!-- <div class="modal-sucesso">
+  <div  id="ajax_budget_msg">
+  <span id="msg"></span>
 
-</div> -->
+  <button id="botao-home" class="ui-btn ui-corner-all">Ok</button>
+  </div>
+
+
 
   <div class="title">
     <h1>
@@ -35,8 +39,8 @@ get_header(); ?>
     </div>
 
     <div class="form-itens">
-    <label for="phone-number">Tefone</label>
-    <input type="number" name="phone-number" pattern="[0-9]*" id="phone-number" value="">
+    <label for="telefone">Tefone</label>
+    <input type="number" name="telefone" pattern="[0-9]*" id="telefone" value="">
     </div>
 
     <div class="form-itens">
@@ -51,7 +55,7 @@ get_header(); ?>
 
     <div class="form-itens">
     <label for="qtd-adulto">Quantidade de Adultos:</label>
-    <input type="range" name="qtd-adulto" id="qtd-adulto" value="0" min="0" max="200">
+    <input type="range" name="qtd-adulto" id="qtd-adultos" value="0" min="0" max="200">
     </div>
 
     <div class="form-itens">
@@ -61,7 +65,7 @@ get_header(); ?>
 
     <div class="form-itens">
       <label for="select-choice-8" class="select">Opções de Lanches para sua festa:</label>
-      <select name="lanches-para-festa" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+      <select name="lanches-para-festa[]" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
           <option>Selecione as opções:</option>
           <option value="xburger">Mini x-burger</option>
           <option value="xsalada">Mini x-salada</option>

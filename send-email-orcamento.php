@@ -5,11 +5,17 @@ $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $data_festa = $_POST['data-festa'];
 $endereco = $_POST['endereco'];
-$qtd_adulto = $_POST['qtd-adulto'];
-$qtd_crianca = $_POST['qtd_crianca'];
-$lanches = $_POST['lanches-para-festa'];
+$qtd_adultos = $_POST['qtd-adultos'];
+$qtd_criancas = $_POST['qtd_criancas'];
+
 $mensagem = $_POST['mensagem'];
 $detalhes_do_form = $_POST['detalhes-do-form'];
+
+
+$lanches;
+foreach ($_POST['lanches-para-festa'] as $key => $lanche) {
+  $lanches .= $lanche." / ";
+}
 
 // try
 // {

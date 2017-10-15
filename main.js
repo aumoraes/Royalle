@@ -68,21 +68,24 @@ $(function() {
            confirm('Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato.');
          },
           success: function (response) {
-            console.log("********* " + response);
             if( response ){
-              //$('#ajax_contact_msg #msg').html( "Sua mensagem foi recebida por nós, vamos responder em breve." );
+              $('#ajax_budget_msg #msg').html( "Sua mensagem foi recebida por nós, vamos responder em breve." );
             } else {
-              //$('#ajax_contact_msg #msg').html( "Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato." );
+              $('#ajax_budget_msg #msg').html( "Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato." );
             }
 
-          // $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'none');
-          // $('.form-contato-mobile #ajax_contact_msg').css('display', 'block');
-          // $('form[name="formContato"]')[0].reset();
+            $(".shadow").css('opacity',0).show().animate({opacity:1});
+            $('#ajax_budget_msg').css('display', 'block');
+            window.scrollTo(0, 0);
+            $('form[name="formOrcamento"]')[0].reset();
           window.scrollTo(0, 0);
          }
       });
     return false;
   });
+
+
+
 
 });
 
@@ -90,9 +93,11 @@ $('.menu').click(function(){
   openMenu();
 });
 
-$('#botao-home').click (function(){
+$('#ajax_contact_msg #botao-home, #botao-home').click (function(){
+  console.log("foi");
   $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'block');
   $('.form-contato-mobile #ajax_contact_msg').css('display', 'none');
+  $('#ajax_budget_msg').css('display', 'none');
   closeAll();
 });
 
