@@ -24,5 +24,8 @@ include_once "slider.php";
 	<div id="cardapio">
 		<?php get_template_part('template-parts/cardapio');	?>
 	</div>
+	<div id="sobre">
+		<?php get_template_part('template-parts/sobre');	?>
+	</div>
 
 	<?php get_footer();
