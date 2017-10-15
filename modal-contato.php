@@ -17,7 +17,7 @@
   <a href="tel:011965881509">
     <button id="ligar-agora" class="ui-btn ui-corner-all">Ligar Agora</button>
   </a>
-  <a href="https://api.whatsapp.com/send?phone=55011965881509">
+  <a href="https://api.whatsapp.com/send?phone=55011965881509" target="_blank">
     <button id="whatsapp" class="ui-btn ui-corner-all">Enviar mensagem no whats</button>
   </a>
   <br />

@@ -1,0 +1,17 @@
+.orcamento {
+  margin: 110px 0;
+  padding: 0 15px;
+  .title{
+    color: #960303;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+  }
+  .form-itens{
+    margin-bottom: 20px;
+    .ui-input-btn input{
+      background: #960303;
+      opacity: .3;
+    }
+  }
+}

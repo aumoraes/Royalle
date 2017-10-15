@@ -10,7 +10,7 @@
     <div class="sidebar-category">
       <ul class="sidebar float">
           <li>
-            <a href="#cardapio" class="menu-item cardapio" target="_self">
+            <a href="/#cardapio" class="menu-item cardapio" target="_self">
               cardápio
             </a>
             <span class="arrow"></span>
@@ -21,7 +21,7 @@
             </a>
           </li>
           <li>
-            <a href="#orcamento" class="menu-item orcamento" target="_self">
+            <a href="/orcamento" class="menu-item orcamento" target="_self">
               orçamento
             </a>
           </li>

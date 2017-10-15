@@ -10,15 +10,14 @@
  * @version 1.0
  */
 
-get_header(); ?>
+get_header();
+
+include_once "slider.php";
+
+?>
 
 
 <div class="wrap" id="geral" >
-	<?php
-	include_once "form-contato-mobile.php";
-	include_once "modal-contato.php";
-	?>
-
 	<div id="introducao">
 		<?php get_template_part('template-parts/introducao');	?>
 	</div>
