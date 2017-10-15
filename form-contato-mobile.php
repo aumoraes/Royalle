@@ -10,9 +10,10 @@
   </h1>
 
 
-  <div  id="ajax_contact_msg" class="col-sm-4 col-xs-12  text-xs-center"></div>
+  <div  id="ajax_contact_msg" class="col-sm-4 col-xs-12  text-xs-center">
+  <span id="msg"></span></div>
 
-  <form name="formContato" action="//royalleeventos.com.br/send-email.php" method="POST" class="wpc-comments-form">
+  <form name="formContato" action="//royalleeventos.com.br/send-email.php" method="POST" class="formContato">
 
     <label for="nome">Nome *</label>
     <input type="text" data-clear-btn="true" name="nome">

@@ -44,8 +44,15 @@ $(function() {
            confirm('Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato.');
          },
           success: function (response) {
-          $('#ajax_contact_msg').html(response);
-          $('#ajax_contact_msg').slideDown('slow').delay(1500).slideUp('slow');
+            if( response ){
+              $('#ajax_contact_msg #msg').html( "Sua mensagem foi recebida por nós, vamos responder em breve" );
+            } else {
+              $('#ajax_contact_msg #msg').html( "Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato." );
+            }
+
+          $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display': 'none');
+
+
          }
       });
     return false;
