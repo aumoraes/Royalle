@@ -62,7 +62,7 @@ $(function() {
 $("#modal-launcher, #modal-background, #modal-close").click(function () {
 
 
-  $("body, .sidebar-menu").addClass("open");
+  //$("body, .sidebar-menu").addClass("open");
   $(".shadow").css('opacity',0).show().animate({opacity:1});
   $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
 
