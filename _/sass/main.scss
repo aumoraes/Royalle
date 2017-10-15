@@ -28,8 +28,8 @@ Text Domain: mokaeventos
 //@import "modules/base";
 @import "modules/responsible";
 @import "modules/slider";
+@import "modules/modal";
 @import "responsible/footer-contato-mobile";
-@import "responsible/form-contato-mobile";
 @import "responsible/introducao";
 @import "responsible/cardapio";
 
@@ -46,6 +46,9 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.8;
+}
+body * {
+    text-shadow: none !important;
 }
 
 /* Headings */

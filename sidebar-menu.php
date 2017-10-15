@@ -16,7 +16,7 @@
             <span class="arrow"></span>
           </li>
           <li>
-            <a href="#contato" class="menu-item contato" target="_self">
+            <a href="#contato" class="menu-item contato" onclick="openModal('modal-contato')">
               contato
             </a>
           </li>
