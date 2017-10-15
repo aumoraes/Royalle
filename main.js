@@ -30,6 +30,27 @@ $(function() {
   $(".shadow").css('opacity',0).show().animate({opacity:1});
   $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
 
+
+  //AJAX CONTACT FORM...
+  $('form[name="formContato"]').submit(function () {
+    var This = $(this);
+      var action = $(This).attr('action');
+      var data_value = unescape($(This).serialize());
+      $.ajax({
+         type: "POST",
+         url:action,
+         data: data_value,
+         error: function (xhr, status, error) {
+           confirm('Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato.');
+         },
+          success: function (response) {
+          $('#ajax_contact_msg').html(response);
+          $('#ajax_contact_msg').slideDown('slow').delay(1500).slideUp('slow');
+         }
+      });
+    return false;
+  });
+
 });
 
 $('.footer-contato-mobile').click(function(){

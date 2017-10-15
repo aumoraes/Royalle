@@ -3,103 +3,81 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
-$data_envio = date('d/m/Y');
-$hora_envio = date('H:i:s');
+$data_envio =''; //date('d/m/Y');
+//$hora_envio =''; //date('H:i:s');
 $detalhes_do_form = $_POST['detalhes-do-form'];
+
+// try
+// {
+//     $DT = new DateTime( 'now', new DateTimeZone( 'America/Sao_Paulo') );
+//     $data_envio = $DT->format( "d/m/Y H:i:s" );
+// }
+// catch( Exception $e )
+// {
+//     echo 'Erro ao instanciar objeto.';
+//     echo $e->getMessage();
+//     exit();
+// }
+//
+
 
 
 // Compo E-mail
   $arquivo = "
   <style type='text/css'>
-  body {
-  margin:0px;
-  font-family:Verdane;
-  font-size:12px;
-  color: #666666;
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
   }
-  a{
-  color: #666666;
-  text-decoration: none;
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
   }
-  a:hover {
-  color: #FF0000;
-  text-decoration: none;
-  }
+
+  tr:nth-child(even) {
+      background-color: #dddddd;
   </style>
   <html>
-    <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
-      <tr>
-        <td>
-          <tr>
-             <td width='500'>Nome:$nome</td>
-          </tr>
-          <tr>
-            <td width='320'>E-mail:<b>$email</b></td>
-          </tr>
-          <tr>
-            <td width='320'>Mensagem:$mensagem</td>
-          </tr>
-        </td>
-      </tr>
-      <tr>
-        <td>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></td>
-      </tr>
+
+
+
+
+    <table>
+    <table width='510' border='1' cellpadding='1' cellspacing='1'>
+    <tr>
+      <th>Nome</th>
+      <th>$nome</th>
+    <tr>
+    <tr>
+      <th>Email</th>
+      <th>$email</th>
+    </tr>
+    <tr>
+      <th>Mensagem</th>
+      <th>$mensagem</th>
+    </tr>
     </table>
+    <p>Este e-mail foi enviado em <b>$data_envio</b></p>
   </html>
   ";
 
   // emails para quem será enviado o formulário
     $emailenviar = "contato@royalleeventos.com.br";
     $destino = $emailenviar;
-    $assunto = "Contato pelo Site - $detalhes_do_form";
+    $assunto = "Contato pelo Site Royalle Eventos- $detalhes_do_form";
 
     // É necessário indicar que o formato do e-mail é html
     $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $headers .= 'From: $nome <$email>';
+        $headers .= 'From: '.$email;
     //$headers .= "Bcc: $EmailPadrao\r\n";
 
     $enviaremail = mail($destino, $assunto, $arquivo, $headers);
     if($enviaremail){
-    $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
-    echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
+    echo "true";
     } else {
-    $mgm = "ERRO AO ENVIAR E-MAIL!";
-    echo "";
+    echo "false";
     }
-
-// header('Access-Control-Allow-Origin: *');
-// ini_set('default_charset','UTF-8');
-//
-//
-//   if(!$_POST) exit;
-//
-//   $to 	  = 'contato@facositesgratis.com.br';
-//   $name_site = 'facositesgratis';
-//   $nome = utf8_decode( $_POST['nome'] );
-//   $email = $_POST['email'];
-//   $telefone = $_POST['telefone'];
-//   $comentario = '';
-//
-//   if( !empty( $_POST['comentario'] ) ){
-//     $comentario = $_POST['comentario'];
-//   }else{
-//     $comentario = 'Sem comentário';
-//   }
-//
-// 	$subject = 'Solicitacao Orcamento via site -  ' . $name_site . '';
-// 	$msg = "Nome: $nome\r\n\n";
-// 	$msg .= "Email: $email\r\n\n";
-//   $msg .= "telefone: $telefone\r\n\n";
-//   $msg .= "Comentário: $comentario\r\n\n ";
-//   $msg .= "-------------------------------------------------------------------------------------------\r\n";
-//    $headers = "From: $email\r\nReturn-Path: $email\r\n";
-// 	 if(@mail($to, $subject, $msg, $headers ) )
-// 	 {
-// 		 echo "<span class='success-msg'>Obrigado, responderemos em breve.</span>";
-// 	 }
-// 	 else
-// 	 {
-// 		 echo "<span class='error-msg'>Erro, tente novamente.</span>";
-// 	 }
-?>

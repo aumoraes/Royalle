@@ -10,6 +10,8 @@
   </h1>
 
 
+  <div  id="ajax_contact_msg" class="col-sm-4 col-xs-12  text-xs-center"></div>
+
   <form name="formContato" action="//royalleeventos.com.br/send-email.php" method="POST" class="wpc-comments-form">
 
     <label for="nome">Nome *</label>
