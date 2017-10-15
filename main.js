@@ -50,7 +50,7 @@ $(function() {
               $('#ajax_contact_msg #msg').html( "Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato." );
             }
 
-          $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display': 'none');
+          $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'none');
 
 
          }
@@ -69,7 +69,7 @@ $('.footer-contato-mobile').click(function(){
 $('.menu').click(function(){
   openMenu();
 });
-$('.shadow').click (function(){
+$('.shadow, .botao-home').click (function(){
   closeMenu();
 });
 function openMenu(){
