@@ -25,7 +25,7 @@
     <input type="text" data-clear-btn="true" name="email">
 
     <label for="nome">Mensagem *</label>
-    <textarea data-autogrow="false" name="mensagem" rows="100" data-clear-btn="true" class="textarea-contato" ></textarea>
+    <textarea data-autogrow="false" name="mensagem" rows="100" data-clear-btn="true" class="textarea-contato" required></textarea>
 
     <input type="hidden" name="detalhes-do-form" value="Formulário Mobile"  />
     <div class="form-btn">
