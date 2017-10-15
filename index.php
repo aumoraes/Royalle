@@ -18,4 +18,11 @@ get_header(); ?>
 	include_once "form-contato-mobile.php";
 	?>
 
+	<div id="introducao">
+		<?php get_template_part('template-parts/introducao');	?>
+	</div>
+	<div id="cardapio">
+		<?php get_template_part('template-parts/cardapio');	?>
+	</div>
+
 	<?php get_footer();

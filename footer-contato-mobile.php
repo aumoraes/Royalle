@@ -1,9 +1,7 @@
 <div id="modal-launcher" class="footer-contato-mobile">
 
   <p class="email-icon">
-    <span class="icon-envelop">
-
-                </span>
+    <span class="icon-envelop"></span>
   </p>
   <p class="mensagem">
     Mensagem

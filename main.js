@@ -1,10 +1,6 @@
 
 $(function() {
 
-
-
-
-
   $('.slider').bxSlider({
     mode: 'fade',
     infiniteLoop: true,
@@ -60,37 +56,22 @@ $(function() {
 });
 
 $("#modal-launcher, #modal-background, #modal-close").click(function () {
-
-
-  //$("body, .sidebar-menu").addClass("open");
   $(".shadow").css('opacity',0).show().animate({opacity:1});
   $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
-
   $("#modal-content,#modal-background").toggleClass("active");
-
 });
-
-// $('.footer-contato-mobile').click(function(){
-//   $("body, .sidebar-menu").addClass("open");
-//   $(".shadow").css('opacity',0).show().animate({opacity:1});
-//   $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
-// });
 
 $('.menu').click(function(){
   openMenu();
 });
 
-
 $('#botao-home').click (function(){
-
   $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'block');
   $('.form-contato-mobile #ajax_contact_msg').css('display', 'none');
-
-
   closeMenu();
 });
 
-$('.shadow').click (function(){
+$('.shadow, .sidebar-category').click (function(){
   closeMenu();
 });
 function openMenu(){

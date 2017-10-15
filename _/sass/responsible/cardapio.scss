@@ -1,0 +1,48 @@
+#cardapio{
+  background-color: #fff;
+  padding: 15px;
+  text-shadow: none;
+
+  .item .title{
+
+    margin: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+    .item .description{
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+  .cardapio-itens{
+    .cardapio-itens-left{
+      display: inline-block;
+      float: left;
+      width: 50%;
+    }
+    .cardapio-itens-right{
+      display: inline-block;
+      width: 50%;
+    }
+    .check_cardapio {
+      background-color: transparent !important;
+      border: 0 !important;
+      display: inline-block;
+      float: left;
+      margin: auto;
+      min-width: 0px;
+      width: 30px;
+      padding: 16px 20px 10px 16px;
+
+      &.ui-btn.ui-icon-check.ui-btn-icon-left:after {
+          background-color: #960303 !important;
+      }
+
+    }
+  }
+
+
+}
