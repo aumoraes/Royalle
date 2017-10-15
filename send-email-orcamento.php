@@ -6,7 +6,7 @@ $telefone = $_POST['telefone'];
 $data_festa = $_POST['data-festa'];
 $endereco = $_POST['endereco'];
 $qtd_adultos = $_POST['qtd-adultos'];
-$qtd_criancas = $_POST['qtd_criancas'];
+$qtd_criancas = $_POST['qtd-criancas'];
 
 $mensagem = $_POST['mensagem'];
 $detalhes_do_form = $_POST['detalhes-do-form'];
@@ -79,11 +79,11 @@ foreach ($_POST['lanches-para-festa'] as $key => $lanche) {
     </tr>
     <tr>
       <th>Quantidade de Adultos</th>
-      <th>$qtd_adulto</th>
+      <th>$qtd_adultos</th>
     </tr>
     <tr>
       <th>Quantidade de Crianças</th>
-      <th>$qtd_crianca</th>
+      <th>$qtd_criancas</th>
     </tr>
     <tr>
       <th>Lanches</th>

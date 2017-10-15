@@ -55,7 +55,7 @@ get_header(); ?>
 
     <div class="form-itens">
     <label for="qtd-adulto">Quantidade de Adultos:</label>
-    <input type="range" name="qtd-adulto" id="qtd-adultos" value="0" min="0" max="200">
+    <input type="range" name="qtd-adultos" id="qtd-adultos" value="0" min="0" max="200">
     </div>
 
     <div class="form-itens">
