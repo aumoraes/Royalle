@@ -1,33 +1,4 @@
-body{
-  &.open{
-    overflow: hidden;
-  }
-}
 
-.shadow{
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,0.6);
-  z-index: 999;
-  position: fixed;
-  display: none;
-}
-
-.swipe-sidebar{
-  z-index: 999;
-  position: fixed;
-  width: 25px;
-  height: 100%;
-}
-
-.sidebar-menu{
-  z-index: 9999;
-  position: fixed;
-  background: #fff;
-  width: 85%;
-  height: 100%;
-  margin-left: -85%;
-}
 
 .sidebar-header, .sidebar-category, .sidebar-footer{
   padding: 0 15px;

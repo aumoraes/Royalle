@@ -26,9 +26,18 @@ $(function() {
     }
   });
 
-
+  $("body, .sidebar-menu").addClass("open");
+  $(".shadow").css('opacity',0).show().animate({opacity:1});
+  $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
 
 });
+
+$('.footer-contato-mobile').click(function(){
+  $("body, .sidebar-menu").addClass("open");
+  $(".shadow").css('opacity',0).show().animate({opacity:1});
+  $(".form-contato-mobile").css('opacity',0).show().animate({opacity:1});
+});
+
 $('.menu').click(function(){
   openMenu();
 });
@@ -41,8 +50,11 @@ function openMenu(){
   $(".sidebar-menu").animate({'margin-left':'0px'});
 }
 function closeMenu(){
+
+    $(".form-contato-mobile").css('display', 'none');
   $(".shadow").animate({opacity:0}, function(){
-    $(".shadow").css('display','none')
+    $(".shadow").css('display','none');
+
   });
   $(".sidebar-menu").animate({'margin-left':'-85%'});
   $("body, .sidebar-menu").removeClass("open");

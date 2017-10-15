@@ -13,7 +13,9 @@
  */
 
 ?>
-
+<?php
+include_once "footer-contato-mobile.php";
+?>
 		<!-- <div id="footer" class="clearfix">
 			<div class="footer-copy">
 				<p class="copyright">© <?php //echo date("Y"); ?> <a href="http://aumoraes.com" rel="home">Aurélio de Moraes</a></p>
@@ -27,6 +29,10 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 <script  src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+<script  src='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js'></script>
+
+
 
 <script  src='<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.touchSwipe.min.js'></script>
 

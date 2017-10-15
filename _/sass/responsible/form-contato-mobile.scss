@@ -1,0 +1,37 @@
+.form-contato-mobile{
+  height: 90%;
+  width: 90%;
+  background-color: #fff;
+  z-index: 9999;
+  position: fixed;
+  display: none;
+  top: 50%;
+  margin-top: -257px;
+  left: 50%;
+  margin-left: -143px;
+  padding: 15px;
+
+  .tab{
+    height: auto;
+    background: #333;
+    color: #fff;
+    text-align: center;
+  }
+
+  .info{
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .form-btn{
+    bottom: 7px;
+    position: absolute;
+    width: 90%;
+  }
+
+  .textarea-contato{
+    max-height: 105px;
+    resize: none;
+
+  }
+}
