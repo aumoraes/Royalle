@@ -51,7 +51,7 @@ $(function() {
             }
 
           $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'none');
-          $('.form-contato-mobile #ajax_contact_msg').css('display', 'none');
+          $('.form-contato-mobile #ajax_contact_msg').css('display', 'block');
 
 
 
@@ -76,7 +76,7 @@ $('.menu').click(function(){
 $('#botao-home').click (function(){
 
   $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'block');
-  $('.form-contato-mobile #ajax_contact_msg').css('display', 'block');
+  $('.form-contato-mobile #ajax_contact_msg').css('display', 'none');
 
 
   closeMenu();
