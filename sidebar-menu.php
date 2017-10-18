@@ -31,7 +31,7 @@
             </a>
           </li>
           <li>
-            <a href="#galeria" class="menu-item galeria" target="_self">
+            <a href="/galeria" class="menu-item galeria" target="_self">
               galeria de fotos
             </a>
           </li>

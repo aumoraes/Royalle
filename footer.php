@@ -68,6 +68,9 @@ include_once "footer-contato-mobile.php";
 
 <script  src='<?php echo get_stylesheet_directory_uri();?>/main.js?v=1.0.0'></script>
 
+<script src="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/picturefill.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/lightgallery-all.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/jquery.mousewheel.min.js"></script>
 
 
 </body>

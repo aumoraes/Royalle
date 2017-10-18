@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link href="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/lightgallery.css" rel="stylesheet">
 
+<script src="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/jquery.min.js"></script>
 
 
 
@@ -25,7 +27,7 @@
 
     include_once "sidebar-menu.php";
 
-  
+
   	include_once "form-contato-mobile.php";
   	include_once "modal-contato.php";
 
