@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-        <div class="demo-gallery">
+        <div class="demo-gallery dark">
             <ul id="lightgallery" class="list-unstyled row">
                 <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
                     <a href="">

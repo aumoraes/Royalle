@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <link href="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/lightgallery.css" rel="stylesheet">
 
-<script src="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/jquery.min.js"></script>
+<script  src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 
 
 

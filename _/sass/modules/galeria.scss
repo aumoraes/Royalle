@@ -1,17 +1,26 @@
-body{
-    background-color: #152836
-}
-.demo-gallery > ul {
-  margin-bottom: 0;
+.demo-gallery > ul{
+  margin-top: 110px;
+  display: -webkit-block;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: lightgrey;
+    padding: 15px;
+
 }
 .demo-gallery > ul > li {
-    float: left;
-    margin-bottom: 15px;
-    margin-right: 20px;
-    width: 200px;
+  width: 140px;
+height: auto;
+margin: 10px;
+display: inline-block;
+
+    //float: left;
+    //margin-bottom: 15px;
+    //margin-right: 20px;
+    //width: 200px;
 }
 .demo-gallery > ul > li a {
-  border: 3px solid #FFF;
+  border: 3px solid #fff;
   border-radius: 3px;
   display: block;
   overflow: hidden;
@@ -112,6 +121,6 @@ body{
 .demo-gallery.dark > ul > li a {
   border: 3px solid #04070a;
 }
-.home .demo-gallery {
+.demo-gallery {
   padding-bottom: 80px;
 }
