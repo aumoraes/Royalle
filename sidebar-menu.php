@@ -26,7 +26,7 @@
             </a>
           </li>
           <li>
-            <a href="#sobre-nos" class="menu-item sobre-nos" target="_self">
+            <a href="#sobre" class="menu-item sobre" target="_self">
               sobre nós
             </a>
           </li>
@@ -36,7 +36,7 @@
             </a>
           </li>
           <li>
-            <a href="#faq" class="menu-item faq" target="_self">
+            <a href="/faq" class="menu-item faq" target="_self">
               perguntas frequentes
             </a>
           </li>

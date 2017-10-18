@@ -4,8 +4,9 @@
       <div class="icon"></div>
     </div>
 
-	  <p class="logo-mobile" >
+
+		<a class="logo-mobile"  href="/" target="_self">
 			<img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-full-mobile.png" alt="royalleeventos" >
-		</p>
+		</a>
 	</div>
 </header>

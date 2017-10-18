@@ -1,6 +1,7 @@
 
 $(function() {
 
+
   $('.slider').bxSlider({
     mode: 'fade',
     infiniteLoop: true,
@@ -101,7 +102,7 @@ $('#ajax_contact_msg #botao-home, #botao-home').click (function(){
   closeAll();
 });
 
-$('.shadow, .sidebar-category .cardapio').click (function(){
+$('.shadow, .sidebar-category .cardapio, .sidebar-category .sobre').click (function(){
   closeAll();
 });
 
