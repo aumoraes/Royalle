@@ -18,7 +18,7 @@ include_once "footer-contato-mobile.php";
 ?>
 
 
-	<div id="footer" class="clearfix">
+	<!-- <div id="footer" class="clearfix">
 
 		<div class="footer-social-media">
 			<div class="facebook">
@@ -42,9 +42,9 @@ include_once "footer-contato-mobile.php";
 		</div>
 
 		<div class="footer-copy">
-			<p class="copyright">© <?php echo date("Y"); ?> <a href="http://royalleeventos.com.br" rel="home">Royalle Eventos</a></p>
+			<p class="copyright">© <?php //echo date("Y"); ?> <a href="http://royalleeventos.com.br" rel="home">Royalle Eventos</a></p>
 		</div>
-	</div>
+	</div> -->
 
 
 
