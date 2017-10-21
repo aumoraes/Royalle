@@ -99,7 +99,7 @@ $(function() {
 
 
   $(document).on("scroll",function(){
-    if($(document).scrollTop()>100){
+    if($(document).scrollTop()>20){
       $(".logo-mobile .large").css('display', 'none');//removeClass("large").addClass("small");
       $(".logo-mobile .small").css('display', 'block');//removeClass("large").addClass("small");
       $('header').css('height', '70');
