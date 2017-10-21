@@ -1,5 +1,6 @@
 $(function() {
 
+  // Faz o botao de chat desaparecer quando abrir a galeria de fotos
   var $lg = $('#lightgallery');
   $lg.lightGallery();
   $lg.on('onAfterOpen.lg',function(event){
@@ -92,32 +93,20 @@ $(function() {
     return false;
   });
 
-
-
-
 });
 
 $('.menu').click(function(){
   openMenu();
 });
 
-// $('body').on('changedClass',function(){
-//   if( $( "body" ).hasClass( "lg-on" ) ){
-//     console.log(true);
-//   }else{
-//     console.log(false);
-//   }
-// });
+var accordion = function( id_expandir ){
 
-// $('.imagem-galeria, .lg-close.lg-icon').click(function(){
-//   if( $( "body" ).hasClass( "lg-on" ) ){
-//     console.log(true);
-//   }else{
-//     console.log(false);
-//   }
-//
-//   $('.wh-widget-send-button').css('display', 'none');
-// });
+  $("#label-tab.item-" + id_expandir ).toggleClass('ui-icon-carat-d ui-icon-carat-u');
+
+  $( '.tab-content-' + id_expandir ).animate({height: 'toggle'});
+
+};
+
 
 $('#ajax_contact_msg #botao-home, #botao-home').click (function(){
   console.log("foi");

@@ -28,8 +28,7 @@ foreach ( $attachments as $attachment ) {
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
-    $('#lightgallery').lightGallery();
-
+  $('#lightgallery').lightGallery();
 });
 </script>
 <?php get_footer();
