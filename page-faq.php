@@ -9,43 +9,37 @@
 
 
 <?php
+$perguntas = [];
+$respostas = [];
 while ( have_posts() ) : the_post(); ?>
-  <div class="entry-content-page">
-    <?php
-    $pergunta_resposta = explode(PHP_EOL, get_the_content());
-    $pergunta = [];
-    $resposta = [];
-    ?>
+  <?php
+  $pergunta_resposta = explode(PHP_EOL, get_the_content());
+  ?>
+  <?php
+  foreach ($pergunta_resposta as $key => $value) {
 
-    <?php
-    $counter = 0;
-    foreach ($pergunta_resposta as $key => $value) {
-
-      if( substr(trim($value), -1) === '?' ){
-      ?>
-        <div id="tab-control" class="tab">
-
-        <p id="label-tab" class="item-<?php echo $counter?> label-tab ui-icon-carat-d ui-btn-icon-right" onclick="accordion('<?php echo $counter?>')" ><?php echo $value?></p>
-      <?php
-      }else if( strlen($value) > 1 ){
-        ?>
-        <div class="tab-content tab-content-<?php echo $counter?>">
-          <p><?php echo $value ?></p>
-        </div>
-        </div>
-        <?php
-        $counter++;
-      }
-
+    if( substr(trim($value), -1) === '?' ){
+      array_push($perguntas, $value);
+    }else if( strlen($value) > 1 ){
+      array_push($respostas, $value);
     }
-    ?>
-  </div>
-
+  }
+  ?>
 <?php
 endwhile;
 wp_reset_query();
-?>
 
+foreach ($perguntas as $key => $value) {
+  ?>
+  <div id="tab-control" class="tab">
+    <p id="label-tab" class="item-<?php echo $key?> label-tab ui-icon-carat-d ui-btn-icon-right" onclick="accordion('<?php echo $key?>')" ><?php echo $value?></p>
+    <div class="tab-content tab-content-<?php echo $key?>">
+      <?php echo $respostas[$key] ?>
+    </div>
+  </div>
+  <?php
+}
+?>
 </div>
 
 <?php get_footer();
