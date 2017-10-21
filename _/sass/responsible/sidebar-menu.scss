@@ -6,16 +6,15 @@
   min-height: 20%;
   position: absolute;
   width: 100%;
-  border-bottom: 1px solid #f3f1ee;
+  border-bottom: 3px solid #960303;
   overflow: hidden;
-  //background: url('http://royalleeventos.com.br/wp-content/uploads/2017/10/menu-background.jpg');
-  background-repeat: no-repeat;
   .sidebar-header-logo{
     display: table-cell;
     vertical-align: middle;
     height: 120px;
     img{
       vertical-align: middle;
+      width: 100%;
     }
   }
 }
