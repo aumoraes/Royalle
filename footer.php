@@ -66,6 +66,7 @@
 <script  src='<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.bxslider.min.js'></script>
 
 
+
 <script  src='<?php echo get_stylesheet_directory_uri();?>/main.js?v=1.0.0'></script>
 
 <script src="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/picturefill.min.js"></script>

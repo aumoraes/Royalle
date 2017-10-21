@@ -6,6 +6,10 @@ header{
   z-index: 999;
   width: 100%;
   background: $background_color;
+  height: 100px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 
   &.border-bottom {
     border-bottom: 1px solid #eee;
@@ -20,9 +24,14 @@ header{
     .logo-mobile{
       display: inline-block;
       float: right;
-      img{
-        width: 107px;
-      }
     }
+    .logo-mobile .large{
+      width: 107px;
+    }
+    .logo-mobile .small{
+      width: 75px;
+      display: none;
+    }
+
   }
 }
