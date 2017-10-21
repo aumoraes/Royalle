@@ -17,7 +17,7 @@ foreach ( $attachments as $attachment ) {
   $imageTitle = $attachment->post_title;
   $imageDescription = $attachment->post_excerpt;
   ?>
-  <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="<?php echo $imagePath?>" data-src="<?php echo $imagePath?>.jpeg" data-sub-html="<h4><?php echo $imageTitle?></h4><p><?php echo $imageDescription?></p>">
+  <li class="col-xs-6 col-sm-4 col-md-3 imagem-galeria" data-responsive="<?php echo $imagePath?>" data-src="<?php echo $imagePath?>.jpeg" data-sub-html="<h4><?php echo $imageTitle?></h4><p><?php echo $imageDescription?></p>">
     <a href="">
       <img class="img-responsive" src="<?php echo $imagePath?>-350x350.jpeg">
     </a>
@@ -29,6 +29,7 @@ foreach ( $attachments as $attachment ) {
 <script type="text/javascript">
 $(document).ready(function(){
     $('#lightgallery').lightGallery();
+
 });
 </script>
 <?php get_footer();

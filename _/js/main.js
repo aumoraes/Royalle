@@ -1,5 +1,13 @@
 $(function() {
 
+  var $lg = $('#lightgallery');
+  $lg.lightGallery();
+  $lg.on('onAfterOpen.lg',function(event){
+    $('#wh-widget-send-button').css('display', 'none');
+  });
+  $lg.on('onCloseAfter.lg',function(event){
+    $('#wh-widget-send-button').css('display', 'block');
+  });
 
   $('.slider').bxSlider({
     mode: 'fade',
@@ -92,6 +100,24 @@ $(function() {
 $('.menu').click(function(){
   openMenu();
 });
+
+// $('body').on('changedClass',function(){
+//   if( $( "body" ).hasClass( "lg-on" ) ){
+//     console.log(true);
+//   }else{
+//     console.log(false);
+//   }
+// });
+
+// $('.imagem-galeria, .lg-close.lg-icon').click(function(){
+//   if( $( "body" ).hasClass( "lg-on" ) ){
+//     console.log(true);
+//   }else{
+//     console.log(false);
+//   }
+//
+//   $('.wh-widget-send-button').css('display', 'none');
+// });
 
 $('#ajax_contact_msg #botao-home, #botao-home').click (function(){
   console.log("foi");
