@@ -53,7 +53,6 @@
 
 <?php wp_footer(); ?>
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
 

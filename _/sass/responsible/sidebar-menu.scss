@@ -14,7 +14,6 @@
     height: 120px;
     img{
       vertical-align: middle;
-      width: 100%;
     }
   }
 }
@@ -37,8 +36,12 @@
     font-size: 22px;
     line-height: 23px;
     letter-spacing: 0.015em;
-    color: #5b5855;
+    color: #5b5855 !important;
     font-weight: 400;
+  }
+
+  .ui-btn-icon-right:after{
+    background-color: #960303;
   }
 }
 
@@ -47,5 +50,4 @@
   min-height: 20%;
   position: absolute;
   width: 100%;
-  text-align: center;
 }

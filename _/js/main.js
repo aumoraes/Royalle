@@ -20,8 +20,6 @@ $(function() {
     slideWidth: "970"
   });
 
-  openMenu();
-  
   $(".swipe-sidebar").swipe( {
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
