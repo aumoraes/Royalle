@@ -12,12 +12,16 @@
 
 get_header();
 
-include_once "slider.php";
+//include_once "slider.php";
 
 ?>
 
 
 <div class="wrap" id="geral" >
+
+	<?php
+	include_once "banner.php";
+	?>
 	<div id="introducao">
 		<?php get_template_part('template-parts/introducao');	?>
 	</div>

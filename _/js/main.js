@@ -12,13 +12,13 @@ $(function() {
     $('#wh-widget-send-button').css('display', 'block');
   });
 
-  $('.slider').bxSlider({
-    mode: 'fade',
-    infiniteLoop: true,
-    pager: true,
-    auto:true,
-    slideWidth: "970"
-  });
+  // $('.slider').bxSlider({
+  //   mode: 'fade',
+  //   infiniteLoop: true,
+  //   pager: true,
+  //   auto:true,
+  //   slideWidth: "970"
+  // });
 
   $(".swipe-sidebar").swipe( {
     //Generic swipe handler for all directions

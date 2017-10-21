@@ -28,7 +28,8 @@ Text Domain: mokaeventos
 
 //@import "modules/base";
 @import "modules/responsible";
-@import "modules/slider";
+//@import "modules/slider";
+@import "modules/banner";
 @import "modules/modal";
 @import "modules/orcamento";
 @import "modules/faq";
@@ -104,4 +105,9 @@ body{
     margin: auto;
     margin-top: 147px;
   }
+}
+
+
+#geral {
+  margin-top: 100px;
 }

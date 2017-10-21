@@ -26,8 +26,8 @@
 
     include_once "sidebar-menu.php";
 
-
   	include_once "form-contato-mobile.php";
+    
   	include_once "modal-contato.php";
 
     ?>
