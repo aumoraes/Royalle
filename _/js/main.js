@@ -18,7 +18,8 @@ $(document).on("scroll",function(){
 $(function() {
 
 
-  $('.banner.index img').css('width','100%');
+  $('.background-banner-imagem.bg-banner-imagem-barraca img').animate({'width':'100%'});
+
 
   // Faz o botao de chat desaparecer quando abrir a galeria de fotos
   var $lg = $('#lightgallery');

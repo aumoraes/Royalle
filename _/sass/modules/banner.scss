@@ -1,27 +1,24 @@
 .banner {
   margin-bottom: -9px;
-  text-align: center;
-  min-height: 185px;
-  &.index{
-    background-image: url('http://royalleeventos.com.br/wp-content/uploads/2017/10/fundo-amarelo-banner.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
+  .background-banner{
+    width: 100%;
+    img{
+      width: 100%;
+    }
   }
-  .center-image{
-    width: 70%;
-    margin: auto;
+
+  .background-banner-imagem.bg-banner-imagem-barraca {
+    position: absolute;
+    margin-top: -64%;
+    padding: 16%;
+    text-align: center;
   }
-  .helper {
-    display: inline-block;
-    min-height: 175px;
-    vertical-align: middle;
+
+  .background-banner-imagem.bg-banner-imagem-barraca img {
+    width: 10%;
+    margin: auto 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
-  img{
-    width: 0;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: all 2s ease;
-    vertical-align: middle;
-  }
+
 }
