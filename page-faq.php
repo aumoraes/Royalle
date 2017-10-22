@@ -1,12 +1,5 @@
 <?php get_header(); ?>
-
-<br />
-<br />
-<br />
-<br />
-
 <div class="wrapper">
-
 
 <?php
 $perguntas = [];
@@ -34,7 +27,9 @@ foreach ($perguntas as $key => $value) {
   <div id="tab-control" class="tab">
     <p id="label-tab" class="item-<?php echo $key?> label-tab ui-icon-carat-d ui-btn-icon-right" onclick="accordion('<?php echo $key?>')" ><?php echo $value?></p>
     <div class="tab-content tab-content-<?php echo $key?>">
-      <?php echo $respostas[$key] ?>
+      <p>
+        <?php echo $respostas[$key] ?>
+      </p>
     </div>
   </div>
   <?php

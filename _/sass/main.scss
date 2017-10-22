@@ -50,6 +50,8 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.8;
+  position: relative;
+  margin-top: 100px !important;
 }
 body * {
     text-shadow: none !important;
@@ -75,6 +77,10 @@ body{
   }
 }
 
+.top-0{
+  top: -100px;
+  position: relative;
+}
 .shadow{
   height: 100%;
   width: 100%;
@@ -105,9 +111,4 @@ body{
     margin: auto;
     margin-top: 147px;
   }
-}
-
-
-#geral {
-  margin-top: 100px;
 }

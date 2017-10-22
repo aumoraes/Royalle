@@ -1,6 +1,21 @@
+$(document).on("scroll",function(){
+  if($(document).scrollTop()>20){
+    $(".logo-mobile .large").fadeOut("slow", function() {
+      $('header').css('height', '70');
+      $('.btn-mobile').css('margin-top', '14px');
+      $(".logo-mobile .small").fadeIn("slow");
+    });
+  } else {
+    $('header').css('height', '100');
+    $('.btn-mobile').css('margin-top', '28px');
+    $(".logo-mobile .small").fadeOut("slow", function() {
+      $(".logo-mobile .large").fadeIn("slow");
+    });
+  }
+});
+
 
 $(function() {
-
 
   // Faz o botao de chat desaparecer quando abrir a galeria de fotos
   var $lg = $('#lightgallery');
@@ -98,35 +113,14 @@ $(function() {
 });
 
 
-  $(document).on("scroll",function(){
-    if($(document).scrollTop()>20){
-      $(".logo-mobile .large").css('display', 'none');//removeClass("large").addClass("small");
-      $(".logo-mobile .small").css('display', 'block');//removeClass("large").addClass("small");
-      $('header').css('height', '70');
-      $('.btn-mobile').css('margin-top', '14px');
-
-    } else{
-      $(".logo-mobile .small").css('display', 'none');//removeClass("large").addClass("small");
-      $(".logo-mobile .large").css('display', 'block');
-      $('header').css('height', '100');
-      $('.btn-mobile').css('margin-top', '28px');
-
-
-    }
-  });
-
 $('.menu').click(function(){
   openMenu();
 });
 
 var accordion = function( id_expandir ){
-
   $("#label-tab.item-" + id_expandir ).toggleClass('ui-icon-carat-d ui-icon-carat-u');
-
   $( '.tab-content-' + id_expandir ).animate({height: 'toggle'});
-
 };
-
 
 $('#ajax_contact_msg #botao-home, #botao-home').click (function(){
   $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'block');
