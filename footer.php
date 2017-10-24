@@ -18,33 +18,66 @@
 ?>
 
 
-	<!-- <div id="footer" class="clearfix">
+	<div id="footer" >
+    <div class="imagem-footer">
+      <img  src="<?php bloginfo('template_directory'); ?>/assets/images/logo-full-mobile.png" alt="royalleeventos" >
+    </div>
+    <!-- <div class="footer-menu-itens">
+      <ul>
+          <li>
+            <a href="/#cardapio" class="footer-menu-item" target="_self">
+              cardápio
+            </a>
+          </li>
+          <li>
+            <a href="/#sobre" class="footer-menu-item" target="_self">
+              sobre nós
+            </a>
+          </li>
+          <li>
+            <a href="#contato" class="footer-menu-item" onclick="openModal('modal-contato')">
+              contato
+            </a>
+          </li>
+          <li>
+            <a href="/orcamento" class="footer-menu-item" target="_self">
+              orçamento
+            </a>
+          </li>
+          <li>
+            <a href="/galeria" class="footer-menu-item" target="_self">
+              galeria de fotos
+            </a>
+          </li>
+          <li>
+            <a href="/faq" class="footer-menu-item" target="_self">
+              perguntas frequentes
+            </a>
+          </li>
+      </ul>
+    </div> -->
 
-		<div class="footer-social-media">
-			<div class="facebook">
-				<a href='https://www.facebook.com/RoyalleBarraquinhas/' target="_blank">
-					<span class="icon-facebook"></span>
-				</a>
-			</div>
+    <?php
 
-			<div class="instagram">
-				<a href='https://www.instagram.com/royalle_eventos/' target="_blank">
-					<span class="icon-instagram"></span>
-				</a>
-			</div>
+    if( is_home() ){
+      get_template_part('template-parts/siganos-face');
+    } else {
+      get_template_part('template-parts/siganos');
+    }
+    ?>
 
-			<div class="whatsapp">
-			<a href="https://api.whatsapp.com/send?phone=55011965881509" target="_blank">
-		    <span class="icon-whatsapp"></span>
-		  </a>
-			</div>
 
-		</div>
 
-		<div class="footer-copy">
-			<p class="copyright">© <?php //echo date("Y"); ?> <a href="http://royalleeventos.com.br" rel="home">Royalle Eventos</a></p>
-		</div>
-	</div> -->
+	</div>
+
+  <div class="footer-copyright">
+    <p class="footer-content-copyright">
+      Royalle Eventos © 2017
+    </p>
+    <p class="footer-content-message">
+      Todos os direitos reservados
+    </p>
+  </div>
 
 
 
