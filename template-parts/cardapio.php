@@ -1,6 +1,4 @@
 <div class="cardapio">
-
-
 	<?php
 	$args = [
 		'cat' => get_cat_ID( "cardapio" )

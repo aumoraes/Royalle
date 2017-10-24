@@ -1,6 +1,4 @@
 <div class="introducao">
-
-
 	<?php
 	$args = [
 		'cat' => get_cat_ID( "introducao" )
@@ -12,7 +10,7 @@
 
 	<div class="item">
     <h1 class="title">
-      Barraquinhas Royalle
+      Royalle Barraquinhas
     </h1>
 		<p class="description">
 			<?php echo get_the_content(); ?>
