@@ -16,14 +16,8 @@ $(document).on("scroll",function(){
 
 
 $(function() {
-
-
   $('#popupDialog').css({'display':'block'});
-
-
   $('.background-banner-imagem.bg-banner-imagem-barraca img').animate({'width':'100%'});
-
-
   // Faz o botao de chat desaparecer quando abrir a galeria de fotos
   var $lg = $('#lightgallery');
   $lg.lightGallery();
@@ -69,19 +63,40 @@ $(function() {
          url:action,
          data: data_value,
          error: function (xhr, status, error) {
-           confirm('Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato.');
+          slideLeftToRight();
+          $(".ui-popup").popup( "close" );
+
+          $('#modal-erro').animate({'margin-top': '-100px'});
+
+          setTimeout(function(){
+            $('#modal-erro').animate({'margin-top': '-200px'});
+          }, 3000);
+
+
          },
           success: function (response) {
             if( response ){
-              $('#ajax_contact_msg #msg').html( "Sua mensagem foi recebida por nós, vamos responder em breve." );
-            } else {
-              $('#ajax_contact_msg #msg').html( "Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato." );
-            }
+              slideLeftToRight();
+              $(".ui-popup").popup( "close" );
 
-          $('.form-contato-mobile .info, .form-contato-mobile .formContato').css('display', 'none');
-          $('.form-contato-mobile #ajax_contact_msg').css('display', 'block');
+              $('#modal-sucesso').animate({'margin-top': '-100px'});
+
+              setTimeout(function(){
+                $('#modal-sucesso').animate({'margin-top': '-200px'});
+              }, 3000);
+
+            } else {
+              slideLeftToRight();
+              $(".ui-popup").popup( "close" );
+
+              $('#modal-erro').animate({'margin-top': '-100px'});
+
+              setTimeout(function(){
+                $('#modal-erro').animate({'margin-top': '-200px'});
+              }, 3000);
+
+            }
           $('form[name="formContato"]')[0].reset();
-          window.scrollTo(0, 0);
          }
       });
     return false;

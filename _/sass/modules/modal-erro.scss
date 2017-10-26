@@ -1,0 +1,15 @@
+#modal-erro{
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  height: 100px;
+  padding: 15px;
+  margin-top: -200px;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+  .content p{
+    color: #a94442;
+  }
+}

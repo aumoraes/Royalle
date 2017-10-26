@@ -1,0 +1,15 @@
+#modal-sucesso{
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  height: 100px;
+  padding: 15px;
+  margin-top: -200px;
+  background-color: #dff0d8;
+  border: 1px solid #9abd8b;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+  .content p{
+    color: #3c763d;
+  }
+}
