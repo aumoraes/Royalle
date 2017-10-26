@@ -70,7 +70,7 @@ $(function() {
 
           setTimeout(function(){
             $('#modal-erro').animate({'margin-top': '-200px'});
-          }, 3000);
+          }, 5500);
 
 
          },
@@ -83,7 +83,7 @@ $(function() {
 
               setTimeout(function(){
                 $('#modal-sucesso').animate({'margin-top': '-200px'});
-              }, 3000);
+              }, 5500);
 
             } else {
               slideLeftToRight();
@@ -93,7 +93,7 @@ $(function() {
 
               setTimeout(function(){
                 $('#modal-erro').animate({'margin-top': '-200px'});
-              }, 3000);
+              }, 5500);
 
             }
           $('form[name="formContato"]')[0].reset();
@@ -117,7 +117,7 @@ $(function() {
 
            setTimeout(function(){
              $('#modal-erro').animate({'margin-top': '-200px'});
-           }, 3000);
+           }, 5500);
          },
           success: function (response) {
             if( response ){
@@ -125,13 +125,13 @@ $(function() {
 
               setTimeout(function(){
                 $('#modal-sucesso').animate({'margin-top': '-200px'});
-              }, 3000);
+              }, 5500);
             } else {
               $('#modal-erro').animate({'margin-top': '-100px'});
 
               setTimeout(function(){
                 $('#modal-erro').animate({'margin-top': '-200px'});
-              }, 3000);
+              }, 5500);
             }
 
             //$(".shadow").css('opacity',0).show().animate({opacity:1});
