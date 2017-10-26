@@ -17,7 +17,7 @@
 		</p>
 		<div id="selo-12">
 			<p>
-				Clique aqui e faça um orçamento grátis!
+				<a href="http://royalleeventos.com.br/orcamento" target="_self">Clique aqui e faça um orçamento grátis!</a>
 			</p>
 		</div>
 	</div>

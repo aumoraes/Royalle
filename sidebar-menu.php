@@ -24,9 +24,12 @@
               </a>
             </li>
             <li>
-              <a href="#contato" class="menu-item contato ui-icon-carat-r ui-btn-icon-right" onclick="openModal('modal-contato')">
-                contato
-              </a>
+
+
+
+
+              <!-- <a href="#contato" class="menu-item contato ui-icon-carat-r ui-btn-icon-right" onclick="openModal('modal-contato')"> -->
+              <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="menu-item contato ui-icon-carat-r ui-btn-icon-right">contatos</a>
             </li>
             <li>
               <a href="/orcamento" class="menu-item ui-icon-carat-r ui-btn-icon-right orcamento-menu-item" target="_self">

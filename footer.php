@@ -18,6 +18,8 @@
 ?>
 
 
+
+
 	<div id="footer" >
     <div class="imagem-footer">
       <img  src="<?php bloginfo('template_directory'); ?>/assets/images/logo-full-mobile.png" alt="royalleeventos" >

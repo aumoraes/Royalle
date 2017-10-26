@@ -18,6 +18,9 @@ $(document).on("scroll",function(){
 $(function() {
 
 
+  $('#popupDialog').css({'display':'block'});
+
+
   $('.background-banner-imagem.bg-banner-imagem-barraca img').animate({'width':'100%'});
 
 
@@ -138,7 +141,7 @@ $('.shadow, .sidebar-category .cardapio, .sidebar-category .sobre').click (funct
 });
 
 $('.sidebar-category .contato').click (function(){
-  closeMenu();
+  closeAll();
 });
 
 function openMenu(){
@@ -162,13 +165,28 @@ function closeMenu(){
   $("body, .sidebar-menu").removeClass("open");
 }
 
+function slideRightToLeft(){
+  $("#formulario-contato").css({'opacity':'1'});
+  $("#contatos").animate({'margin-left':'-100%'});
+  $("#formulario-contato").animate({'margin-left':'0%'}, function(){
+    $("#contatos").css({'opacity':'0'});
+  });
 
-function openModal( modal_class_name, close_other_modal, modal_to_close ){
-  if(close_other_modal){
-    $("."+modal_to_close).css('opacity',1).hide().animate({opacity:0});
-  }
-
-  window.scrollTo(0, 0);
-  $("."+modal_class_name).css('opacity',0).show().animate({opacity:1});
-  $(".shadow").css('opacity',0).show().animate({opacity:1});
 }
+function slideLeftToRight(){
+  $("#contatos").css({'opacity':'1'});
+  $("#contatos").animate({'margin-left':'0%'});
+  $("#formulario-contato").animate({'margin-left':'100%'},function(){
+    $("#formulario-contato").css({'opacity':'0'});
+  });
+}
+
+// function openModal( modal_class_name, close_other_modal, modal_to_close ){
+//   if(close_other_modal){
+//     $("."+modal_to_close).css('opacity',1).hide().animate({opacity:0});
+//   }
+//
+//   window.scrollTo(0, 0);
+//   $("."+modal_class_name).css('opacity',0).show().animate({opacity:1});
+//   $(".shadow").css('opacity',0).show().animate({opacity:1});
+// }
