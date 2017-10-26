@@ -113,18 +113,30 @@ $(function() {
          url:action,
          data: data_value,
          error: function (xhr, status, error) {
-           confirm('Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato.');
+           $('#modal-erro').animate({'margin-top': '-100px'});
+
+           setTimeout(function(){
+             $('#modal-erro').animate({'margin-top': '-200px'});
+           }, 3000);
          },
           success: function (response) {
             if( response ){
-              $('#ajax_budget_msg #msg').html( "Sua mensagem foi recebida por nós, vamos responder em breve." );
+              $('#modal-sucesso').animate({'margin-top': '-100px'});
+
+              setTimeout(function(){
+                $('#modal-sucesso').animate({'margin-top': '-200px'});
+              }, 3000);
             } else {
-              $('#ajax_budget_msg #msg').html( "Ops, aconteceu algum erro, envie seus dados para o email contato@royalleeventos.com.br que entraremos em contato." );
+              $('#modal-erro').animate({'margin-top': '-100px'});
+
+              setTimeout(function(){
+                $('#modal-erro').animate({'margin-top': '-200px'});
+              }, 3000);
             }
 
-            $(".shadow").css('opacity',0).show().animate({opacity:1});
-            $('#ajax_budget_msg').css('display', 'block');
-            window.scrollTo(0, 0);
+            //$(".shadow").css('opacity',0).show().animate({opacity:1});
+            //$('#ajax_budget_msg').css('display', 'block');
+            //window.scrollTo(0, 0);
             $('form[name="formOrcamento"]')[0].reset();
           window.scrollTo(0, 0);
          }
