@@ -1,5 +1,5 @@
 #introducao{
-  
+
   background-color: #960303;
   padding: 15px;
   color: #fff;
@@ -14,6 +14,46 @@
   .item .description{
     font-size: 15px;
     margin-bottom: 30px;
+  }
+
+  #selo-12 {
+    background: #ffbb00;
+    position: relative;
+    text-align: center;
+
+    p{
+      z-index: 999;
+      position: absolute;
+      font-weight: bold;
+      margin-top: 30px;
+      text-transform: uppercase;
+    }
+  }
+  #selo-12, #selo-12:before, #selo-12:after {
+    height: 160px;
+    width: 160px;
+    z-index: 9;
+    margin: 70px auto;
+  }
+  #selo-12:before, #selo-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffbb00;
+    margin: 0px auto;
+  }
+  #selo-12:before {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+  }
+  #selo-12:after {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
   }
 
 }

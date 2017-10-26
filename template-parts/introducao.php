@@ -15,6 +15,11 @@
 		<p class="description">
 			<?php echo get_the_content(); ?>
 		</p>
+		<div id="selo-12">
+			<p>
+				Clique aqui e faça um orçamento grátis!
+			</p>
+		</div>
 	</div>
 
 	<?php
