@@ -46,21 +46,16 @@ $instagram-color: #3675b4;
 	display: inline-block;
 	width: 100%;
 
-	// .servicos,
-	// .cardapio,
-	// .footer-menu-itens{
-	// 	width: 33.33%;
-  //   float: left;
-	// }
-	// .siga-nos,
-	// .subscribe
-	// {
-	// 	width: 50%;
-  //   float: left;
-	// }
+	.middle-container{
+		width: 50%;
+		float: left;
+		.servicos,
+		.footer-menu-itens{
+			width: 50%;
+			float: left;
+		}
+	}
 	.siga-nos,
-	.servicos,
-	.footer-menu-itens,
 	.subscribe{
 		width: 25%;
 		float: left;
@@ -116,13 +111,6 @@ $instagram-color: #3675b4;
 		}
 	}
 
-	// .social-contact{
-	// 	margin: 10px 0;
-	// 	border-top: 3px solid #960303;
-	// 	display: inline-block;
-	// 	width: 100%;
-	// 	margin-bottom: 20px;
-	// }
 	.subscribe{
 		.es_caption{
 			color: $facebook-color;
@@ -170,8 +158,72 @@ $instagram-color: #3675b4;
     }
   }
 }
-.footer-copyright{
-	&.footer-copyright-desktop{
-		padding: 20px 160px;
+
+
+
+
+@media screen and (max-width: 1500px) and  (min-width: 1200px) {
+
+	#footer-desktop .subscribe form.es_shortcode_form{
+		width: 100%;
+	}
+	#footer-desktop .middle-container .servicos, #footer-desktop .middle-container .footer-menu-itens {
+		float: none;
+		margin: 0 auto;
+    width: 275px;
+	}
+	#footer-desktop .middle-container .footer-menu-itens{
+		padding-top: 70px;
+	}
+}
+
+@media screen and (max-width: 1199px) and  (min-width: 730px) {
+	#footer-desktop .subscribe{
+		float: initial;
+	}
+
+	#footer-desktop .subscribe form.es_shortcode_form{
+		width: 100%;
+		margin-top: 40px;
+	}
+	#footer-desktop .middle-container .servicos, #footer-desktop .middle-container .footer-menu-itens {
+		float: none;
+		margin: 0 auto;
+    width: 275px;
+	}
+	#footer-desktop .middle-container .footer-menu-itens{
+		padding-top: 70px;
+	}
+
+	#footer-desktop .siga-nos, #footer-desktop .subscribe{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 729px) {
+	#footer-desktop .subscribe{
+		float: initial;
+	}
+
+	#footer-desktop .subscribe form.es_shortcode_form{
+		width: 100%;
+		margin-top: 40px;
+	}
+
+
+	#footer-desktop .middle-container .servicos, #footer-desktop .middle-container .footer-menu-itens {
+		float: none;
+    width: 275px;
+	}
+	#footer-desktop .middle-container .servicos{
+		padding-top: 40px;
+	}
+	#footer-desktop .middle-container .footer-menu-itens{
+		padding-top: 70px;
+	}
+	#footer-desktop .siga-nos, #footer-desktop .middle-container, #footer-desktop .subscribe{
+		width: 50%;
+    float: initial;
+		margin: auto;
 	}
 }
