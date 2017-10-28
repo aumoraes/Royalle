@@ -1,3 +1,5 @@
+<div class="force-footer">
+
 <div id="footer-desktop" >
 	<div class="wrapper-desktop">
 		<?php
@@ -79,4 +81,6 @@
 	    Todos os direitos reservados
 	  </p>
 	</div>
+</div>
+
 </div>

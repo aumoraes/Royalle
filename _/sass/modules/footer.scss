@@ -41,6 +41,13 @@ $instagram-color: #3675b4;
 @mixin two-columns-padding{
 	padding: 0 0px 15px;
 }
+
+.force-footer{
+	position: absolute;
+	width: 100%;
+	display: block;
+	bottom: 0;
+}
 #footer-desktop{
 	padding: 15px;
 	display: inline-block;
