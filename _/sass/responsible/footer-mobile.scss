@@ -22,7 +22,7 @@ $instagram-color: #3675b4;
 		text-align: center;
 	}
   .siga-nos{
-    > p{
+    .social > p{
      @include siganos();
     }
     .facebook, .instagram{

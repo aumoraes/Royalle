@@ -1,13 +1,10 @@
 $facebook-color: #960303;
 $instagram-color: #3675b4;
 @mixin siganos(){
-	border-bottom: 2px solid #505050;
-	font-size: 2em;
-	font-weight: bold;
-	width: 140px;
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 30px;
+	color: $facebook-color;
+	font-size: 1.7em;
+	margin-bottom: 10px;
+  margin-top: -10px;
 }
 
 @mixin social-itens(){
@@ -21,11 +18,14 @@ $instagram-color: #3675b4;
 	float: left;
 	text-align: left;
 }
-@mixin one-colums-left{
+@mixin one-column-left{
 	padding-left: 0px;
 }
-@mixin one-colums-right{
+@mixin one-column-right{
 	padding-left: 0px;
+}
+@mixin one-column-padding{
+	padding: 0;
 }
 @mixin two-columns{
 	width: 50%;
@@ -38,21 +38,38 @@ $instagram-color: #3675b4;
 @mixin two-colums-right{
 	padding-left: 30px;
 }
+@mixin two-columns-padding{
+	padding: 0 0px 15px;
+}
 #footer-desktop{
 	padding: 15px;
+	display: inline-block;
+	width: 100%;
+
 	// .servicos,
-	// .cardapio{
-	// 	width: 16.65%;
+	// .cardapio,
+	// .footer-menu-itens{
+	// 	width: 33.33%;
   //   float: left;
 	// }
-	.imagem-footer,
-	.footer-menu-itens,
-	.social,
+	// .siga-nos,
+	// .subscribe
+	// {
+	// 	width: 50%;
+  //   float: left;
+	// }
+	.siga-nos,
 	.servicos,
-	.cardapio
-	{
+	.footer-menu-itens,
+	.subscribe{
 		width: 25%;
-    float: left;
+		float: left;
+	}
+
+	.siga-nos{
+		.social{
+			width: 340px;
+		}
 	}
 
 	.servicos,
@@ -77,18 +94,19 @@ $instagram-color: #3675b4;
 				@include one-column();
 			}
 			.menu-footer-left{
-				@include one-colums-left();
+				@include one-column-left();
 			}
 			.menu-footer-right{
-				@include one-colums-right();
+				@include one-column-right();
 			}
 
 			li{
-				padding: 0 0px 15px;
+				@include one-column-padding();
 				a.footer-menu-item.ui-link{
 					color: #333;
 					font-size: 1em;
 		    	font-weight: bold;
+		    	text-transform: capitalize;
 				}
 				a.footer-menu-item.ui-link:hover{
 					color: #960303;
@@ -98,10 +116,35 @@ $instagram-color: #3675b4;
 		}
 	}
 
+	// .social-contact{
+	// 	margin: 10px 0;
+	// 	border-top: 3px solid #960303;
+	// 	display: inline-block;
+	// 	width: 100%;
+	// 	margin-bottom: 20px;
+	// }
+	.subscribe{
+		.es_caption{
+			color: $facebook-color;
+			font-size: 1.6em;
+			margin-bottom: -20px;
+		}
+		.es_lablebox label{
+			color: #333;
+			font-size: 1em;
+			font-weight: bold;
+			text-transform: capitalize;
+		}
+		form.es_shortcode_form {
+	    width: 500px;
+	    float: right;
+    	margin-top: -10px;
+		}
+	}
 
 
 	.siga-nos{
-    > p{
+    p{
      @include siganos();
     }
     .facebook, .instagram{
@@ -126,5 +169,9 @@ $instagram-color: #3675b4;
       }
     }
   }
-
+}
+.footer-copyright{
+	&.footer-copyright-desktop{
+		padding: 20px 160px;
+	}
 }

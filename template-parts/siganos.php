@@ -1,4 +1,5 @@
 <div class="siga-nos">
+  <div class="social">
   <p>
     Siga-nos
   </p>
@@ -13,5 +14,6 @@
     <p>
       <a href="https://www.instagram.com/royalle_eventos/" target="_blank">Instagram</a>
     </p>
+  </div>
   </div>
 </div>
