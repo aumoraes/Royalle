@@ -27,7 +27,6 @@ $menu-color-hover: #960303;
 .menu-logo{
   float: left;
   .logo-desktop{
-    float: right;
     .large{
       width: 107px;
     }
@@ -38,7 +37,7 @@ $menu-color-hover: #960303;
   }
 }
 .menu-desktop-items{
-  text-align: center;
+  text-align: right;
   li{
     display: inline-block;
     padding: 30px 2%;

@@ -15,139 +15,20 @@
 ?>
 <?php
 	if( wp_is_mobile() ){
+		get_template_part('template-parts/footer-mobile');
+	} else {
+		get_template_part('template-parts/footer-desktop');
+	}
 ?>
-
-
-
-
-	<div id="footer" >
-    <div class="imagem-footer">
-      <img  src="<?php bloginfo('template_directory'); ?>/assets/images/logo-full-mobile.png" alt="royalleeventos" >
-    </div>
-
-
-    <?php
-		if( wp_is_mobile() ){
-	    if( is_home() ){
-	      get_template_part('template-parts/siganos-face');
-	    } else {
-	      get_template_part('template-parts/siganos');
-	    }
-		}
-    ?>
-
-
-
-	</div>
-	<?php
-} else {
-?>
-<div id="footer" >
-	<div class="wrapper">
-
-	<div class="imagem-footer">
-		<img  src="<?php bloginfo('template_directory'); ?>/assets/images/logo-full-mobile.png" alt="royalleeventos" >
-	</div>
-
-	<div class="footer-menu-itens">
-		<p>
-			Indice Menu
-		</p>
-		<ul>
-			<div class="menu-footer-left">
-				<li>
-					<a href="/#cardapio" class="footer-menu-item" target="_self">
-						cardápio
-					</a>
-				</li>
-				<li>
-					<a href="/#sobre" class="footer-menu-item" target="_self">
-						sobre nós
-					</a>
-				</li>
-				<li>
-					<a href="#contato" class="footer-menu-item" onclick="openModal('modal-contato')">
-						contato
-					</a>
-				</li>
-			</div>
-			<div class="menu-footer-right">
-				<li>
-					<a href="/orcamento" class="footer-menu-item" target="_self">
-						orçamento
-					</a>
-				</li>
-				<li>
-					<a href="/galeria" class="footer-menu-item" target="_self">
-						galeria de fotos
-					</a>
-				</li>
-				<li>
-					<a href="/faq" class="footer-menu-item" target="_self">
-						perguntas frequentes
-					</a>
-				</li>
-			</div>
-		</ul>
-	</div>
-	<?php
-	get_template_part('template-parts/siganos');
-	?>
-
-	</div>
-</div>
-<?php
-}
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<?php
-	if( wp_is_mobile() ){
-	?>
-  <div class="footer-copyright">
-    <p class="footer-content-copyright">
-      Royalle Eventos © 2017
-    </p>
-    <p class="footer-content-message">
-      Todos os direitos reservados
-    </p>
-  </div>
-<?php } ?>
-
-
-
-
 
 <?php wp_footer(); ?>
 
-
-
-
 <script  src='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js'></script>
-
 
 
 <script  src='<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.touchSwipe.min.js'></script>
 
 <script  src='<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.bxslider.min.js'></script>
-
-
 
 <script  src='<?php echo get_stylesheet_directory_uri();?>/main.js?v=1.0.0'></script>
 
