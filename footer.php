@@ -15,6 +15,15 @@
 ?>
 <?php
 //include_once "footer-contato-mobile.php";
+
+
+if( !wp_is_mobile() ):
+?>
+</div> <!-- abre no header se desktp -->
+<?php endif;
+
+
+if( wp_is_mobile() ){
 ?>
 
 
@@ -24,61 +33,102 @@
     <div class="imagem-footer">
       <img  src="<?php bloginfo('template_directory'); ?>/assets/images/logo-full-mobile.png" alt="royalleeventos" >
     </div>
-    <!-- <div class="footer-menu-itens">
-      <ul>
-          <li>
-            <a href="/#cardapio" class="footer-menu-item" target="_self">
-              cardápio
-            </a>
-          </li>
-          <li>
-            <a href="/#sobre" class="footer-menu-item" target="_self">
-              sobre nós
-            </a>
-          </li>
-          <li>
-            <a href="#contato" class="footer-menu-item" onclick="openModal('modal-contato')">
-              contato
-            </a>
-          </li>
-          <li>
-            <a href="/orcamento" class="footer-menu-item" target="_self">
-              orçamento
-            </a>
-          </li>
-          <li>
-            <a href="/galeria" class="footer-menu-item" target="_self">
-              galeria de fotos
-            </a>
-          </li>
-          <li>
-            <a href="/faq" class="footer-menu-item" target="_self">
-              perguntas frequentes
-            </a>
-          </li>
-      </ul>
-    </div> -->
+
 
     <?php
-
-    if( is_home() ){
-      get_template_part('template-parts/siganos-face');
-    } else {
-      get_template_part('template-parts/siganos');
-    }
+		if( wp_is_mobile() ){
+	    if( is_home() ){
+	      get_template_part('template-parts/siganos-face');
+	    } else {
+	      get_template_part('template-parts/siganos');
+	    }
+		}
     ?>
 
 
 
 	</div>
+	<?php
+} else {
+?>
+<div id="footer" >
+	<div class="wrapper">
+
+	<div class="imagem-footer">
+		<img  src="<?php bloginfo('template_directory'); ?>/assets/images/logo-full-mobile.png" alt="royalleeventos" >
+	</div>
+
+	<div class="footer-menu-itens">
+		<p>
+			Indice Menu
+		</p>
+		<ul>
+			<div class="menu-footer-left">
+				<li>
+					<a href="/#cardapio" class="footer-menu-item" target="_self">
+						cardápio
+					</a>
+				</li>
+				<li>
+					<a href="/#sobre" class="footer-menu-item" target="_self">
+						sobre nós
+					</a>
+				</li>
+				<li>
+					<a href="#contato" class="footer-menu-item" onclick="openModal('modal-contato')">
+						contato
+					</a>
+				</li>
+			</div>
+			<div class="menu-footer-right">
+				<li>
+					<a href="/orcamento" class="footer-menu-item" target="_self">
+						orçamento
+					</a>
+				</li>
+				<li>
+					<a href="/galeria" class="footer-menu-item" target="_self">
+						galeria de fotos
+					</a>
+				</li>
+				<li>
+					<a href="/faq" class="footer-menu-item" target="_self">
+						perguntas frequentes
+					</a>
+				</li>
+			</div>
+		</ul>
+	</div>
+	<?php
+	get_template_part('template-parts/siganos');
+	?>
+
+	</div>
+</div>
+<?php
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<?php
-	if( !wp_is_mobile() ):
+	if( wp_is_mobile() ){
 	?>
-	</div> <!-- abre no header se desktp -->
-	<?php endif;?>
-
-
   <div class="footer-copyright">
     <p class="footer-content-copyright">
       Royalle Eventos © 2017
@@ -87,7 +137,7 @@
       Todos os direitos reservados
     </p>
   </div>
-
+<?php } ?>
 
 
 
