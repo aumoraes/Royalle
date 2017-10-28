@@ -6,28 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('name'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon/favicon.ico" type="image/x-icon">
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
-
-<link href="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/lightgallery.css" rel="stylesheet">
-
-<script  src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-
-
+    <link href="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/lightgallery.css" rel="stylesheet">
+    <script  src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <?php wp_head(); ?>
   </head>
 
   <body <?php body_class(); ?>>
 
-
   <?php
+  if( wp_is_mobile() ){
     include_once "modal-sucesso.php";
     include_once "modal-erro.php";
+  }
   ?>
 
 
@@ -42,19 +35,11 @@
   }(document, 'script', 'facebook-jssdk'));
   </script>
 
-    <?php
-    include_once "menu.php";
+  <?php
+  include_once "menu.php";
 
-    if( wp_is_mobile() ){
-      include_once "sidebar-menu.php";
-    }
-
-
-  	include_once "form-contato-mobile.php";
-
+  if( wp_is_mobile() ){
+    include_once "sidebar-menu.php";
+    include_once "form-contato-mobile.php";
   	include_once "modal-contato.php";
-
-    if( !wp_is_mobile() ):
-    ?>
-      <div class="geral-desktop">
-    <?php endif;?>
+  }

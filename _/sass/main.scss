@@ -19,7 +19,7 @@ Text Domain: mokaeventos
  @import "partials/reset";
  @import "modules/font";
  @import "modules/galeria";
- //@import "modules/menu";
+ @import "modules/menu";
  @import "responsible/menu-arrow";
  @import "responsible/menu-background";
  //@import "responsible/menu-sidebar";
@@ -107,17 +107,25 @@ body{
   height: 100%;
   margin-left: -85%;
 }
-@media screen and (min-width: 768px) {
-  #geral {
-    max-width: 500px;
-    margin: auto;
-    margin-top: 147px;
-  }
+
+.wrapper-desktop {
+  max-width: 1600px;
+  margin: auto;
 }
 
-@media screen and (min-width: 769px) {
-  .geral-desktop {
-    max-width: 1053px;
-    margin: auto;
-  }
+.size-20{
+  width: 20%;
+  display: inline-block;
+}
+.size-30{
+  width: 30%;
+  display: inline-block;
+}
+.size-70{
+  width: 70%;
+  display: inline-block;
+}
+.size-80{
+  width: 80%;
+  display: inline-block;
 }

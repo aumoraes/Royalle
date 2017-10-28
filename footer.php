@@ -14,16 +14,7 @@
 
 ?>
 <?php
-//include_once "footer-contato-mobile.php";
-
-
-if( !wp_is_mobile() ):
-?>
-</div> <!-- abre no header se desktp -->
-<?php endif;
-
-
-if( wp_is_mobile() ){
+	if( wp_is_mobile() ){
 ?>
 
 
