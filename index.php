@@ -32,4 +32,7 @@ get_header();
 		<?php get_template_part('template-parts/sobre');	?>
 	</div>
 
+</div> <!-- .wrap (index)-->
+
+
 	<?php get_footer();

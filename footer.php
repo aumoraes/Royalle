@@ -72,6 +72,13 @@
 
 	</div>
 
+	<?php
+	if( !wp_is_mobile() ):
+	?>
+	</div> <!-- abre no header se desktp -->
+	<?php endif;?>
+
+
   <div class="footer-copyright">
     <p class="footer-content-copyright">
       Royalle Eventos © 2017
@@ -83,7 +90,7 @@
 
 
 
-</div> <!-- .wrap (index)-->
+
 
 
 <?php wp_footer(); ?>

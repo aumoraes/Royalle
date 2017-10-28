@@ -24,11 +24,6 @@
               </a>
             </li>
             <li>
-
-
-
-
-              <!-- <a href="#contato" class="menu-item contato ui-icon-carat-r ui-btn-icon-right" onclick="openModal('modal-contato')"> -->
               <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="menu-item contato ui-icon-carat-r ui-btn-icon-right">contatos</a>
             </li>
             <li>

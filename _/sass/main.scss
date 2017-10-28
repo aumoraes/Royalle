@@ -114,3 +114,10 @@ body{
     margin-top: 147px;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .geral-desktop {
+    max-width: 1053px;
+    margin: auto;
+  }
+}

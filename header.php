@@ -24,6 +24,7 @@
 
   <body <?php body_class(); ?>>
 
+
   <?php
     include_once "modal-sucesso.php";
     include_once "modal-erro.php";
@@ -44,10 +45,16 @@
     <?php
     include_once "menu.php";
 
-    include_once "sidebar-menu.php";
+    if( wp_is_mobile() ){
+      include_once "sidebar-menu.php";
+    }
+
 
   	include_once "form-contato-mobile.php";
 
   	include_once "modal-contato.php";
 
+    if( !wp_is_mobile() ):
     ?>
+      <div class="geral-desktop">
+    <?php endif;?>

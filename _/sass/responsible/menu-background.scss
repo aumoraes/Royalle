@@ -17,6 +17,33 @@ header{
     margin-left: auto;
     margin-right: auto;
 
+    // DESKTOP
+
+    .size-30{
+      width: 30%;
+      display: inline-block;
+      text-align: center;
+    }
+    .size-70{
+      width: 70%;
+      display: inline-block;
+      float: right;
+      margin-top: 18px;
+    }
+
+    .logo-desktop{
+      display: inline-block;
+      //float: right;
+    }
+    .logo-desktop .large{
+      width: 107px;
+    }
+    .logo-desktop .small{
+      width: 98px;
+      display: none;
+    }
+
+    // MOBILE
     .logo-mobile{
       display: inline-block;
       float: right;
@@ -28,6 +55,31 @@ header{
       width: 75px;
       display: none;
     }
+
+
+    .menu-desktop-items{
+      .menu-itens{
+        &.flex{
+          position: relative;
+          height: auto;
+        }
+        li{
+          display: inline-block;
+          padding: 16px;
+          text-transform: capitalize;
+          a{
+            color: #505050;
+          }
+          a:hover{
+            color: #960303;
+            border-bottom: 3px solid #960303;
+
+          }
+        }
+      }
+    }
+
+
 
   }
   .flex{

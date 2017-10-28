@@ -1,16 +1,30 @@
 $(document).on("scroll",function(){
-  if($(document).scrollTop()>20){
-    $(".logo-mobile .large").fadeOut("slow", function() {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if($(document).scrollTop()>20){
+      $(".logo-mobile .large").css('display', 'none');
+      $(".logo-mobile .small").css('display', 'block');
       $('header').css('height', '70');
       $('.btn-mobile').css('margin-top', '14px');
-      $(".logo-mobile .small").fadeIn("slow");
-    });
+    } else {
+      $('header').css('height','100');
+      $('.btn-mobile').css('margin-top', '28px');
+      setTimeout(function(){
+        $(".logo-mobile .large").css('display', 'block');
+        $(".logo-mobile .small").css('display', 'none');
+      }, 100);
+    }
   } else {
-    $('header').css('height', '100');
-    $('.btn-mobile').css('margin-top', '28px');
-    $(".logo-mobile .small").fadeOut("slow", function() {
-      $(".logo-mobile .large").fadeIn("slow");
-    });
+    if($(document).scrollTop()>20){
+      $(".logo-desktop .large").css('display', 'none');
+      $(".logo-desktop .small").css('display', 'block');
+      $('header').css('height', '89');
+    } else {
+      $('header').css('height','100');
+      setTimeout(function(){
+        $(".logo-desktop .large").css('display', 'block');
+        $(".logo-desktop .small").css('display', 'none');
+      }, 100);
+    }
   }
 });
 
