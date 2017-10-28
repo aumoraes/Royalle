@@ -33,6 +33,7 @@
 .demo-gallery > ul > li:hover{
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
+  background-color: #960303;
 }
 .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
   opacity: 1;
