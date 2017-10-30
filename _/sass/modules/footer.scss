@@ -135,6 +135,9 @@ $instagram-color: #3675b4;
 	    float: right;
     	margin-top: -10px;
 		}
+		.es_msg_pg{
+			color: $facebook-color;
+		}
 	}
 
 
@@ -168,7 +171,11 @@ $instagram-color: #3675b4;
 
 
 
-
+@media screen and (max-width: 1500px){
+	.force-footer{
+		position: initial;
+	}
+}
 @media screen and (max-width: 1500px) and  (min-width: 1200px) {
 
 	#footer-desktop .subscribe form.es_shortcode_form{

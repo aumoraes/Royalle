@@ -1,10 +1,9 @@
+.demo-gallery {
+  padding-bottom: 80px;
+  min-height: 986px;
+  text-align: center;
+}
 .demo-gallery > ul{
-  display: -webkit-block;
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 15px;
-
 }
 .demo-gallery > ul > li {
   width: 140px;
@@ -115,6 +114,11 @@
 .demo-gallery.dark > ul > li a {
   border: 3px solid #04070a;
 }
-.demo-gallery {
-  padding-bottom: 80px;
+
+
+
+@media screen and (max-width: 1500px){
+  .demo-gallery {
+    min-height: 0;
+  }
 }

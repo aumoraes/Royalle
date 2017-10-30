@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-<div class="demo-gallery">
+<div class="demo-gallery wrapper-desktop">
+
+<h1 class="page-title">Galeria de Fotos</h1>
+
 <ul id="lightgallery" class="list-unstyled row">
 <?php
 global $post;
