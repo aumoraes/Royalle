@@ -10,14 +10,13 @@
 		while ( $query->have_posts() ) : $query->the_post();
 	?>
 
-	<div class="item">
     <h1 class="title">
       Sobre a Royalle Eventos
     </h1>
 		<p class="description">
 			<?php echo get_the_content(); ?>
 		</p>
-	</div>
+	
 
 	<?php
 	endwhile;

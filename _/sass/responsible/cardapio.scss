@@ -1,23 +1,25 @@
 #cardapio{
 
   background-color: #fff;
-  padding: 15px;
+  padding: 25px 145px;
   text-shadow: none;
+  text-align: center;
 
-  .item .title{
+  .title{
     margin: 15px;
     text-align: center;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 3em;
   }
-  .item .description{
-    font-size: 15px;
+  .description{
+    font-size: 1.3em;
     margin-bottom: 30px;
   }
 
   .cardapio-itens{
     .item_cardapio{
       margin-bottom: 20px;
+      font-size: 1.3em;
     }
     .cardapio-itens-left{
       display: inline-block;
@@ -44,6 +46,11 @@
 
     }
   }
+}
 
 
+@media screen and (max-width: 830px){
+  #cardapio{
+    padding: 25px 15px;
+  }
 }

@@ -1,18 +1,27 @@
 #sobre{
   background-color: #3675b4;
-  padding: 15px;
+  padding: 25px 145px;
   color: #fff;
   text-shadow: none;
 
-  .item .title{
+  .title{
     margin: 15px;
     text-align: center;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 3em;
   }
-  .item .description{
-    font-size: 15px;
+  .description{
+    font-size: 1.3em;
     margin-bottom: 30px;
   }
 
+}
+
+
+
+
+@media screen and (max-width: 830px){
+  #sobre{
+    padding: 25px 15px;
+  }
 }

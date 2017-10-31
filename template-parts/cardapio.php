@@ -8,7 +8,6 @@
 		while ( $query->have_posts() ) : $query->the_post();
 	?>
 
-	<div class="item">
     <h1 class="title">
       Cardápio
     </h1>
@@ -63,8 +62,6 @@
   </div>
 
 
-
-	</div>
 
 	<?php
 	endwhile;

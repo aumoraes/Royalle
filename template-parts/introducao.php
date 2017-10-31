@@ -8,7 +8,6 @@
 		while ( $query->have_posts() ) : $query->the_post();
 	?>
 
-	<div class="item">
     <h1 class="title">
       Royalle Barraquinhas
     </h1>
@@ -20,7 +19,7 @@
 				<a href="http://royalleeventos.com.br/orcamento" target="_self">Clique aqui e faça um orçamento grátis!</a>
 			</p>
 		</div>
-	</div>
+
 
 	<?php
 	endwhile;
