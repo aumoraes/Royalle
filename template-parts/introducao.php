@@ -1,4 +1,4 @@
-<div class="introducao">
+<div class="introducao ">
 	<?php
 	$args = [
 		'cat' => get_cat_ID( "introducao" )

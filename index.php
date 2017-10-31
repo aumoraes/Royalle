@@ -17,7 +17,7 @@ get_header();
 ?>
 
 
-<div class="wrap" >
+<div class="wrapper-desktop" >
 
 	<?php
 	include_once "banner.php";

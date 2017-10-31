@@ -29,9 +29,15 @@ $(document).on("scroll",function(){
 });
 
 
+$(document).ready(function() {
+  $('.banner .barraca').animate({'background-size':'50%'});
+  $('.banner .barraca').animate({'opacity':'1'});
+});
+
+
 $(function() {
   $('#popupDialog').css({'display':'block'});
-  $('.background-banner-imagem.bg-banner-imagem-barraca img').animate({'width':'100%'});
+
   // Faz o botao de chat desaparecer quando abrir a galeria de fotos
   var $lg = $('#lightgallery');
   $lg.lightGallery();
