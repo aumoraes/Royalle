@@ -1,13 +1,24 @@
 .orcamento {
-  margin: 40px 0px 100px;
-  padding: 0 15px;
-  .title{
-    color: #960303;
-    text-align: center;
-    margin: 10px;
-    font-size: 20px;
+  p {
+    font-size: 1.6em;
   }
+  padding: 0 15px;
   .form-itens{
     margin-bottom: 20px;
+    label{
+      font-size: 1.3em !important;
+    }
+    .teste{
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 736px){
+  .orcamento {
+    p {
+      font-size: 1.3em;
+    }
   }
 }

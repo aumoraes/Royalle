@@ -1,6 +1,4 @@
 .demo-gallery {
-  padding-bottom: 80px;
-  min-height: 986px;
   text-align: center;
 }
 .demo-gallery > ul{
@@ -113,12 +111,4 @@
 }
 .demo-gallery.dark > ul > li a {
   border: 3px solid #04070a;
-}
-
-
-
-@media screen and (max-width: 1500px){
-  .demo-gallery {
-    min-height: 0;
-  }
 }

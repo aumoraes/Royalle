@@ -43,7 +43,8 @@ $instagram-color: #3675b4;
 }
 
 .force-footer{
-	position: absolute;
+	margin-top: 80px;
+	position: relative;
 	width: 100%;
 	display: block;
 	bottom: 0;
@@ -135,7 +136,7 @@ $instagram-color: #3675b4;
 	    float: right;
     	margin-top: -10px;
 		}
-		.es_msg_pg{
+		#es_msg_pg{
 			color: $facebook-color;
 		}
 	}
