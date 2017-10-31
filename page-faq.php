@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<div class="wrapper">
-
+<div class="wrapper wrapper-desktop">
+<h1 class="page-title">Perguntas Frequentes</h1>
 <?php
 $perguntas = [];
 $respostas = [];
