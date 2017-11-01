@@ -36,8 +36,9 @@
     <?php
     foreach ($itens_left as $item_cardapio_left){
     ?>
-       <span class="check_cardapio  ui-btn ui-icon-check ui-btn-icon-left "></span>
+			
        <p class="item_cardapio">
+				  <span class="check_cardapio  ui-btn ui-icon-check ui-btn-icon-left "></span>
           <?php echo $item_cardapio_left; ?>
        </p>
 
@@ -50,8 +51,9 @@
 
     foreach ($itens_right as $item_cardapio_right){
     ?>
-       <span class="check_cardapio  ui-btn ui-icon-check ui-btn-icon-left "></span>
+
        <p class="item_cardapio">
+				 <span class="check_cardapio  ui-btn ui-icon-check ui-btn-icon-left "></span>
           <?php echo $item_cardapio_right; ?>
        </p>
 

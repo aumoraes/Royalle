@@ -18,9 +18,12 @@
 
   .cardapio-itens{
     .item_cardapio{
+      width: 45%;
+      margin: auto;
       margin-bottom: 20px;
       font-size: 1.3em;
     }
+
     .cardapio-itens-left{
       display: inline-block;
       float: left;
@@ -48,9 +51,24 @@
   }
 }
 
+@media screen and (max-width: 1050px){
+  #cardapio{
+    .cardapio-itens{
+      .item_cardapio{
+        width: 60%;
+      }
+    }
+  }
+}
 
-@media screen and (max-width: 830px){
+
+@media screen and (max-width: 850px){
   #cardapio{
     padding: 25px 15px;
+    .cardapio-itens{
+      .item_cardapio{
+        width: 100%;
+      }
+    }
   }
 }
