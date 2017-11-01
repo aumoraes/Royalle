@@ -17,10 +17,8 @@
   <body <?php body_class(); ?>>
 
   <?php
-  if( wp_is_mobile() ){
     include_once "modal-sucesso.php";
     include_once "modal-erro.php";
-  }
   ?>
 
 
@@ -40,6 +38,6 @@
 
   if( wp_is_mobile() ){
     include_once "sidebar-menu.php";
-    include_once "form-contato-mobile.php";
-  	include_once "modal-contato.php";
+    //include_once "form-contato-mobile.php";
   }
+  include_once "modal-contato.php";
