@@ -136,7 +136,7 @@ $(function() {
            $('#modal-erro').animate({'margin-top': '-100px'});
 
            setTimeout(function(){
-             $('#modal-erro').animate({'margin-top': '-200px'});
+             $('#modal-erro').animate({'margin-top': '-250px'});
            }, 5500);
          },
           success: function (response) {
@@ -150,7 +150,7 @@ $(function() {
               $('#modal-erro').animate({'margin-top': '-100px'});
 
               setTimeout(function(){
-                $('#modal-erro').animate({'margin-top': '-200px'});
+                $('#modal-erro').animate({'margin-top': '-250px'});
               }, 5500);
             }
 

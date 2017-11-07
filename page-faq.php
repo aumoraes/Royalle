@@ -23,9 +23,13 @@ endwhile;
 wp_reset_query();
 
 foreach ($perguntas as $key => $value) {
+  $icon_carat = "ui-icon-carat-u";
+  if( wp_is_mobile()){
+    $icon_carat = "ui-icon-carat-d";
+  }
   ?>
   <div id="tab-control" class="tab">
-    <p id="label-tab" class="item-<?php echo $key?> label-tab ui-icon-carat-d ui-btn-icon-right" onclick="accordion('<?php echo $key?>')" ><?php echo ($key+1)."- ".$value?></p>
+    <p id="label-tab" class="item-<?php echo $key?> label-tab <?php echo $icon_carat?> ui-btn-icon-right" onclick="accordion('<?php echo $key?>')" ><?php echo ($key+1)."- ".$value?></p>
     <div class="tab-content tab-content-<?php echo $key?>">
       <p>
         <?php echo $respostas[$key] ?>

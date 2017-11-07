@@ -73,10 +73,10 @@
       <textarea data-autogrow="false" name="mensagem" id="mensagem" rows="100" data-clear-btn="true" class="textarea-contato" required></textarea>
     </div>
 
-    <input type="hidden" name="detalhes-do-form" value="Formulário Mobile Orcamento"  />
+    <input type="hidden" name="detalhes-do-form" value="Formulário Desktop Orcamento"  />
 
     <div class="form-itens">
-      <input class="teste" type="submit" value="Enviar">
+      <input type="submit" value="Enviar">
     </div>
   </form>
 

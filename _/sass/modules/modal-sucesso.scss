@@ -2,7 +2,7 @@
   width: 100%;
   position: fixed;
   z-index: 9999;
-  height: 100px;
+  height: auto;
   padding: 15px;
   margin-top: -200px;
   background-color: #dff0d8;
@@ -10,6 +10,8 @@
   -webkit-transition: width 2s; /* Safari */
   transition: width 2s;
   text-align: center;
+  min-height: 97px;
+
   .content p{
     color: #3c763d;
   }
