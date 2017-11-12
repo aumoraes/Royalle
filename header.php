@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link href="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/lightgallery.css" rel="stylesheet">
+
+    <?php
+    $pagename = get_query_var('pagename');
+
+    if( $pagename == "galeria"){
+    ?>
+    <meta property="og:image" content="http://royalleeventos.com.br/wp-content/uploads/2017/11/barraquinhas-royalle-eventos-1.jpeg" />
+    <meta property="og:image" content="http://royalleeventos.com.br/wp-content/uploads/2017/11/bandeija-de-lanches-1.jpeg" />
+    <meta property="og:image" content="http://royalleeventos.com.br/wp-content/uploads/2017/11/mini-pizza.jpeg" />
+    <?php
+    }
+    ?>
+
+
+
+
+
+
+
+
     <script  src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <?php wp_head(); ?>
   </head>
