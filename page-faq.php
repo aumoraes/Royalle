@@ -7,6 +7,8 @@ $respostas = [];
 while ( have_posts() ) : the_post(); ?>
   <?php
   $pergunta_resposta = explode(PHP_EOL, get_the_content());
+  $subtitle = $pergunta_resposta[0];
+  unset($pergunta_resposta[0]);
   ?>
   <?php
   foreach ($pergunta_resposta as $key => $value) {
@@ -22,6 +24,7 @@ while ( have_posts() ) : the_post(); ?>
 endwhile;
 wp_reset_query();
 
+echo $subtitle;
 foreach ($perguntas as $key => $value) {
   $icon_carat = "ui-icon-carat-u";
   if( wp_is_mobile()){
