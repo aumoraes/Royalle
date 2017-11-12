@@ -11,8 +11,16 @@
     font-size: 2.4em;
   }
   .description{
+    h3{
+      text-align: center;
+      font-size: 1.5em;
+      margin: 15px;
+    }
     font-size: 1.3em;
     margin-bottom: 30px;
+    a{
+      color: #960303 !important;
+    }
   }
 
 }
