@@ -42,7 +42,7 @@
     (function () {
         var options = {
             facebook: "1957550641236197", // Facebook page ID
-            whatsapp: "+5511965271419", // WhatsApp number
+            whatsapp: "+5511959965985", // WhatsApp number
             company_logo_url: "//scontent.xx.fbcdn.net/v/t1.0-1/p50x50/22046577_1959902527667675_6156946559554393852_n.png?oh=bcecd16b33589ef728cbadf44eeded05&oe=5A6E66C2", // URL of company logo (png, jpg, gif)
             greeting_message: "Olá, como podemos ajudar? Deixe uma mensagem que vamos entrar em contato.", // Text of greeting message
             call_to_action: "Envie uma  mensagem", // Call to action

@@ -11,7 +11,7 @@
       <div class="dados-contato">
         <span class="icon-phone"></span>
         <p class="titulo">
-          (11) 96588-1509
+          (11) 95996-5985
         </p>
         <span class="icon-whatsapp"></span>
         <p class="subtitulo">
