@@ -48,8 +48,10 @@
   <?php
   include_once "menu.php";
 
+  include_once "sidebar-menu.php";
+  
   if( wp_is_mobile() ){
-    include_once "sidebar-menu.php";
+    //include_once "sidebar-menu.php";
     //include_once "form-contato-mobile.php";
   }
   include_once "modal-contato.php";

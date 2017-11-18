@@ -23,6 +23,9 @@ $menu-color-hover: #960303;
   background-color: #483D8B;
 }
 
+header{
+  height: 167px;
+}
 .menu-wrapper{
   max-width: 1040px;
   margin: auto;
@@ -128,8 +131,12 @@ $menu-color-hover: #960303;
 }
 
 @media screen and (max-width: 710px) {
-  .menu-mobile-resposivo{
-    display: block;
+  header{
+    height: 97px;
+  }
+  .menu-mobile-resposivo
+  {
+    display: block !important;
   }
   .menu-desktop-resposivo{
     display: none;

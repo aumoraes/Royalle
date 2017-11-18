@@ -181,16 +181,16 @@ $('#ajax_contact_msg #botao-home, #botao-home').click (function(){
   closeAll();
 });
 
-$('.shadow, .sidebar-category .cardapio, .sidebar-category .sobre').click (function(){
+$('.shadow, .sidebar-category .cardapio, .sidebar-category .sobre, .sidebar-category .contato').click (function(){
   closeAll();
 });
 
-$('.sidebar-category .contato').click (function(){
-  closeAll();
-});
+// $('.sidebar-category .contato').click (function(){
+//   closeAll();
+// });
 
 function openMenu(){
-  $("body, .sidebar-menu").addClass("open");
+  $("body").addClass("open");
   $(".shadow").css('opacity',0).show().animate({opacity:1});
   $(".sidebar-menu").animate({'margin-left':'0px'});
 }
