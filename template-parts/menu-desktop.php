@@ -6,7 +6,7 @@
       </a>
     </div>
   </div>
-  <div class="menu-desktop-items size-80">
+  <div class="menu-desktop-items">
     <div class="info-contato-menu">
       <div class="dados-contato">
         <span class="icon-phone"></span>

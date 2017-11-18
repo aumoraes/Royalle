@@ -4,11 +4,33 @@
   <div class="sidebar-menu">
     <div class="container">
       <div class="sidebar-header">
-        <p class="sidebar-header-logo">
+        <p class="sidebar-header-logo size-30">
           <a class="logo-mobile"  href="/" target="_self">
-      			<img alt="ROYALLE" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/logo-royalle-mobile.png" />
+      			<img alt="royalle-eventos-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/royalle-eventos-logo.png" />
       		</a>
         </p>
+
+        <div class="info-contato-menu">
+          <div class="dados-contato">
+            <span class="icon-phone"></span>
+            <p class="titulo">
+              (11) 95996-5985
+            </p>
+            <span class="icon-whatsapp"></span>
+          </div>
+          <div class="horario-atendimento">
+            <span class="icon-clock"></span>
+            <p class="titulo">
+              Segunda-Sábado
+            </p>
+            <p class="subtitulo">
+              09:00 - 20:00
+            </p>
+          </div>
+        </div>
+
+
+
       </div>
       <div class="sidebar-category">
         <ul class="sidebar float">

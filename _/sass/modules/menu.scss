@@ -44,9 +44,14 @@ header{
 }
 .menu-desktop-items{
   text-align: right;
+  float: none;
+  height: 144px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
   .info-contato-menu{
     width: 100%;
-    float: inherit;
+    display: inline-block;
     span{
       display: inline-block;
       margin-right: 5px;
@@ -74,7 +79,7 @@ header{
   }
   li{
     display: inline-block;
-    padding: 30px 1%;
+    padding: 0px 1%;
     text-transform: capitalize;
     a{
       color: $menu-color !important;

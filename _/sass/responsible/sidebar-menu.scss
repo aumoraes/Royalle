@@ -1,30 +1,26 @@
 .sidebar-header, .sidebar-category, .sidebar-footer{
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .sidebar-header{
-  min-height: 20%;
-  position: absolute;
   width: 100%;
   border-bottom: 3px solid #960303;
-  overflow: hidden;
+  height: 110px;
   .sidebar-header-logo{
-    display: table-cell;
-    vertical-align: middle;
-    height: 120px;
-    img{
+    .logo-mobile{
+      height: 110px;
       vertical-align: middle;
+      display: table-cell;
+      img{
+        vertical-align: middle;
+      }
     }
   }
 }
 
 
 .sidebar-category{
-  top: 20%;
-  min-height: 60%;
-  position: absolute;
-  width: 100%;
-  padding-top: 30px;
+  padding-top: 20px;
   text-transform: capitalize;
   li:hover{
     background-color: #fcae17;
@@ -36,7 +32,7 @@
     -webkit-box-sizing:border-box;
     box-sizing: border-box;
     display: block;
-    padding: 13px 12px;
+    padding: 13px 0px;
     position: relative;
     cursor: pointer;
     font-size: 22px;
@@ -48,12 +44,34 @@
 
   .ui-btn-icon-right:after{
     background-color: #960303;
+    right: 0px;
   }
 }
 
 .sidebar-footer{
-  top: 80%;
-  min-height: 20%;
-  position: absolute;
-  width: 100%;
+  bottom: 0;
+  display: block;
+  position: fixed;
+}
+
+@media screen and (max-width: 710px) {
+  .info-contato-menu{
+    height: 110px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: right;
+    float: none;
+    width: 1%;
+    span{
+      display: inline-block;
+    }
+    .titulo{
+      display: inline-block;
+    }
+    .horario-atendimento{
+    }
+    .horario-atendimento,
+    .dados-contato{
+    }
+  }
 }
