@@ -1,4 +1,4 @@
-$(document).on("scroll",function(){
+/*$(document).on("scroll",function(){
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     if($(document).scrollTop()>20){
       $(".logo-mobile .large").css('display', 'none');
@@ -14,19 +14,17 @@ $(document).on("scroll",function(){
       }, 100);
     }
   } else {
-    if($(document).scrollTop()>20){
-      $(".logo-desktop .large").css('display', 'none');
-      $(".logo-desktop .small").css('display', 'block');
-      $('header').css('height', '89');
+    if($(document).scrollTop()>100){
+      $(".menu-logo .logo-desktop img").css('width', '80%');
+      $('header').css('height', '140');
     } else {
-      $('header').css('height','100');
+      $('header').css('height','170');
       setTimeout(function(){
-        $(".logo-desktop .large").css('display', 'block');
-        $(".logo-desktop .small").css('display', 'none');
+        $(".menu-logo .logo-desktop img").css('width', '100%');
       }, 100);
     }
   }
-});
+});*/
 
 
 $(document).ready(function() {

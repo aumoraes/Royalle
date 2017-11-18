@@ -1,10 +1,12 @@
 <header>
 	<div class="container">
-		<?php if( wp_is_mobile() ): ?>
+		<div class="menu-mobile-resposivo">
 			<?php get_template_part('template-parts/menu-mobile');	?>
-		<?php else: ?>
+		</div>
+		<div class="menu-desktop-resposivo">
 			<?php get_template_part('template-parts/menu-desktop');	?>
-		<?php endif; ?>
+		</div>
+
 	</div>
 
 	<div class="flex-border-menu">

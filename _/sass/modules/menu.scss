@@ -5,7 +5,6 @@ $menu-color-hover: #960303;
   display: flex;
   width: 100%;
   height: 3px;
-  position: absolute;
   bottom: 0;
 }
 @mixin border-size(){
@@ -24,23 +23,55 @@ $menu-color-hover: #960303;
   background-color: #483D8B;
 }
 
+.menu-wrapper{
+  max-width: 1040px;
+  margin: auto;
+}
 .menu-logo{
-  float: left;
   .logo-desktop{
     .large{
-      width: 107px;
+      width: 210px;
     }
-    .small{
-      width: 98px;
-      display: none;
+    img{
+      width: 100%;
+      max-width: 244px;
+      min-width: 200px;
     }
   }
 }
 .menu-desktop-items{
   text-align: right;
+  .info-contato-menu{
+    width: 100%;
+    float: inherit;
+    span{
+      display: inline-block;
+      margin-right: 5px;
+      margin-top: 2px;
+    }
+    .titulo{
+      font-weight: bold;
+      display: inline-block;
+    }
+    .subtitulo{
+
+    }
+    .horario-atendimento{
+      border-right: 2px solid #960303;
+    }
+    .horario-atendimento,
+    .dados-contato{
+      display: inline-block;
+      float: right;
+      padding: 0 10px;
+    }
+  }
+  li:last-child {
+    padding-right: 0px;
+  }
   li{
     display: inline-block;
-    padding: 30px 2%;
+    padding: 30px 1%;
     text-transform: capitalize;
     a{
       color: $menu-color !important;
@@ -72,13 +103,35 @@ $menu-color-hover: #960303;
     @include border-size();
   }
 }
-
-@media screen and (max-width: 1090px) and (min-width: 500px) {
-  header{
-    height: auto !important;
+.menu-mobile-resposivo{
+  display: none;
+}
+.menu-desktop-resposivo{
+  display: block;
+}
+@media screen and (max-width: 1000px) and (min-width: 710px) {
+  .menu-itens{
+    width: 410px;
+    float: right;
+    padding: 10px 0;
   }
-  .menu-desktop-items li{
-    padding-top: 10px;
-    padding-bottom: 0px;
+    .menu-desktop-items li {
+      width: 25%;
+      padding: 5px 0;
+      float: left;
+      text-align: left;
+    }
+
+  .menu-itens > li:nth-last-of-type(-n+2) {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .menu-mobile-resposivo{
+    display: block;
+  }
+  .menu-desktop-resposivo{
+    display: none;
   }
 }
