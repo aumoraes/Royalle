@@ -28,3 +28,28 @@ function wpshout_custom_sizes( $sizes ) {
     ) );
 }
 show_admin_bar( false );
+
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Subscribe',
+		'id'            => 'footer_subscribe_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>'
+	) );
+
+  register_sidebar( array(
+		'name'          => 'Footer Tags',
+		'id'            => 'footer_tags_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>'
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+?>
