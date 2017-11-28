@@ -53,6 +53,7 @@ $instagram-color: #3675b4;
 	padding: 15px;
 	display: inline-block;
 	width: 100%;
+	display: none;
 
 	h3{
 		color: #960303;
@@ -65,115 +66,119 @@ $instagram-color: #3675b4;
 		font-size: 1em;
 		font-weight: bold;
 	}
-
-	.left-container{
-		width: 20%;
+	.footer-container{
+		display: inline-block;
+		width: 25%;
 		float: left;
 	}
-	.right-container{
-		width: 30%;
-		float: left;
-	}
+	// .left-container{
+	// 	width: 20%;
+	// 	float: left;
+	// }
+	// .right-container{
+	// 	width: 30%;
+	// 	float: left;
+	// }
+	//
+	// .left-container{
+	// 	.footer-orcamento{
+	// 		font-size: 1.4em;
+	// 		margin-top: 50px;
+  //   	max-width: 288px;
+  //   	text-align: center;
+	// 		a{
+	// 			color: #960303;
+	// 		}
+	// 	}
+	// }
 
-	.left-container{
-		.footer-orcamento{
-			font-size: 1.4em;
-			margin-top: 50px;
-    	max-width: 288px;
-    	text-align: center;
-			a{
-				color: #960303;
-			}
-		}
-	}
+	// .middle-container{
+	// 	width: 50%;
+	// 	float: left;
+	// 	.footer-fale-conosco,
+	// 	.siga-nos{
+	// 		width: 50%;
+	// 		float: left;
+	// 	}
+	//
+	// 	.footer-fale-conosco{
+	// 		padding-left: 40px;
+	// 		.info-contato-footer{
+	// 	    span{
+	// 	      display: inline-block;
+	// 	      margin-right: 5px;
+	// 	      margin-top: 2px;
+	// 	    }
+	// 	    .titulo{
+	// 	      font-weight: bold;
+	// 	      display: inline-block;
+	// 	    }
+	// 	  }
+	// 	}
+	// 	.siga-nos{
+	// 		.social{
+	// 			width: 340px;
+	// 			float: right;
+  //   		margin-right: 70px;
+	// 		}
+	// 	}
+	//
+	// }
 
-	.middle-container{
-		width: 50%;
-		float: left;
-		.footer-fale-conosco,
-		.siga-nos{
-			width: 50%;
-			float: left;
-		}
-
-		.footer-fale-conosco{
-			padding-left: 40px;
-			.info-contato-footer{
-		    span{
-		      display: inline-block;
-		      margin-right: 5px;
-		      margin-top: 2px;
-		    }
-		    .titulo{
-		      font-weight: bold;
-		      display: inline-block;
-		    }
-		  }
-		}
-		.siga-nos{
-			.social{
-				width: 340px;
-				float: right;
-    		margin-right: 70px;
-			}
-		}
-
-	}
-
-	.right-container{
-		.subscribe{
-			background-color: #960303;
-			color: #fff;
-			width: 80%;
-			margin: auto;
-			.envelope-selo{
-				border-radius: 100%;
-				width: 85px;
-				background-color: #3675b4;
-				padding: 15px 19px;
-				margin-top: -40px;
-				position: relative;
-				display: inline-block;
-				margin-left: 150px;
-				.icon-envelop{
-					color: #fff;
-					font-size: 3em;
-				}
-			}
-		  > div {
-    		padding: 15px;
-			}
-			.titulo-newsletter {
-				color: #fff;
-		    font-size: 2.3em;
-		    text-transform: uppercase;
-		    letter-spacing: 7px;
-		    text-align: center;
-		    margin-top: 30px;
-		    line-height: 0.5;
-			}
-			.subtitulo-newsletter {
-				color: #fff;
-		    font-size: 1.5em;
-		    text-transform: uppercase;
-		    letter-spacing: 0.5px;
-		    text-align: center;
-		    font-weight: lighter;
-			}
-			.ui-page-theme-a .ui-btn,
-			.rm_form_field.rm_button{
-				background-color: #fff;
-			}
-		}
-		.cloud-tag{
-			// width: 100%;
-			// background-color: #960303;
-			// color: #fff;
-			// height: 154px;
-			// padding: 20px;
-			// margin-top: 20px;
-		}
-	}
+	// .right-container{
+	// 	.subscribe{
+	// 		background-color: #960303;
+	// 		color: #fff;
+	// 		width: 80%;
+	// 		margin: auto;
+	// 		.envelope-selo{
+	// 			border-radius: 100%;
+	// 			width: 85px;
+	// 			background-color: #3675b4;
+	// 			padding: 15px 19px;
+	// 			margin-top: -40px;
+	// 			position: relative;
+	// 			display: inline-block;
+	// 			margin-left: 150px;
+	// 			.icon-envelop{
+	// 				color: #fff;
+	// 				font-size: 3em;
+	// 			}
+	// 		}
+	// 	  > div {
+  //   		padding: 15px;
+	// 		}
+	// 		.titulo-newsletter {
+	// 			color: #fff;
+	// 	    font-size: 2.3em;
+	// 	    text-transform: uppercase;
+	// 	    letter-spacing: 7px;
+	// 	    text-align: center;
+	// 	    margin-top: 30px;
+	// 	    line-height: 0.5;
+	// 		}
+	// 		.subtitulo-newsletter {
+	// 			color: #fff;
+	// 	    font-size: 1.5em;
+	// 	    text-transform: uppercase;
+	// 	    letter-spacing: 0.5px;
+	// 	    text-align: center;
+	// 	    font-weight: lighter;
+	// 		}
+	// 		.ui-page-theme-a .ui-btn,
+	// 		.rm_form_field.rm_button{
+	// 			background-color: #fff;
+	// 		}
+	// 	}
+	// 	.cloud-tag{
+	// 		// width: 100%;
+	// 		// background-color: #960303;
+	// 		// color: #fff;
+	// 		// height: 154px;
+	// 		// padding: 20px;
+	// 		// margin-top: 20px;
+	// 	}
+	// }
 }
 
 .footer-copyright{
