@@ -9,13 +9,8 @@
   para nossa newsletter
 </p>
 
-<?php if ( is_active_sidebar( 'footer_subscribe_1' ) ) : ?>
-  <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-    <?php dynamic_sidebar( 'footer_subscribe_1' ); ?>
-  </div><!-- #primary-sidebar -->
-<?php endif; ?>
+<?php
+  es_subbox( $namefield = "YES", $desc = "", $group = "public" );
+?>
 
-</div>
-
-<div class="cloud-tag">
 </div>

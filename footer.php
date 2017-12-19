@@ -21,6 +21,18 @@
 	}
 ?>
 
+
+<div class="footer-copyright">
+	<!-- <div class="wrapper-desktop"> -->
+	  <p class="footer-content-copyright">
+	    Royalle Eventos © 2017
+	  </p>
+	  <p class="footer-content-message">
+	    Todos os direitos reservados
+	  </p>
+	<!-- </div> -->
+</div>
+
 <?php wp_footer(); ?>
 
 <script  src='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js'></script>

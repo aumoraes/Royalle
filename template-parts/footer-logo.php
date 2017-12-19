@@ -5,7 +5,7 @@
 </div>
 <div class="footer-orcamento">
   <p>
-    <a href="/orcamento">
+    <a href="http://royalleeventos.com.br/orcamento" target="_self">
       Faça um orçamento agora
       <br />
       É fácil, rápido!
