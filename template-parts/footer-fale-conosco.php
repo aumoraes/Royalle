@@ -1,4 +1,10 @@
 <div class="footer-fale-conosco">
+
+  <?php
+  get_template_part('template-parts/footer-logo');
+  ?>
+
+
   <h3>Fale Conosco</h3>
 
   <div class="info-contato-footer">
