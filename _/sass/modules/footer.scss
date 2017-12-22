@@ -43,17 +43,16 @@ $instagram-color: #3675b4;
 }
 
 .force-footer{
-	margin-top: 80px;
 	position: relative;
 	width: 100%;
 	display: block;
 	bottom: 0;
-	height: 600px;
+	height: auto;
 }
 #footer-desktop{
 	padding: 20px;
 	width: 100%;
-	margin-bottom: 35px;
+	margin: 30px 0;
 	display: flex;
 
 	h3{
@@ -239,11 +238,14 @@ $instagram-color: #3675b4;
 		display: none;
 	}
 	#footer-desktop{
+		.siga-nos{
+    	text-align: center;
+		}
 		.footer-fale-conosco{
 			.footer-logo{
 				display: block;
 				img{
-					width: 240px;
+					width: 270px;
 				}
 			}
 			.footer-orcamento{
@@ -251,7 +253,7 @@ $instagram-color: #3675b4;
 				background-color: #3675b4;
 				margin-top: 0px;
 				margin-bottom: 60px;
-				width: 240px;
+				width: 270px;
 				font-size: 1.1em;
 			}
 		}
@@ -259,5 +261,76 @@ $instagram-color: #3675b4;
 }
 
 @media screen and (max-width: 1099px){
+	#footer-desktop{
+		display: inline-block;
 
+		.footer-fale-conosco-container,
+		.footer-siga-nos-container,
+		.footer-subscribe-container {
+	    display: inline-block;
+	    flex: none;
+	    width: 49%;
+		}
+
+		.footer-siga-nos-container{
+			float: right;
+			.social{
+				float: right;
+			}
+		}
+		.footer-subscribe-container{
+    	float: left;
+			.subscribe{
+				float: left;
+				margin-top: 70px;
+			}
+		}
+
+	}
+}
+
+
+@media screen and (max-width: 780px){
+	#footer-desktop{
+		display: inline-block;
+		text-align: center;
+		.footer-fale-conosco-container,
+		.footer-siga-nos-container,
+		.footer-subscribe-container {
+	    display: inline-block;
+	    flex: none;
+	    width: 100%;
+    	margin-bottom: 60px;
+		}
+
+		.footer-fale-conosco .footer-orcamento {
+    	margin: 10px auto 60px auto;
+		}
+
+		.footer-siga-nos-container{
+			float: none;
+			.social{
+				float: none;
+			}
+		}
+		.footer-subscribe-container{
+    	float: none;
+			.subscribe{
+				float: none;
+				margin-top: 70px;
+				.envelope-selo {
+			    margin-left: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px){
+	.footer-subscribe-container{
+		.subscribe{
+			width: 100%;
+			padding: 0px;
+		}
+	}
 }

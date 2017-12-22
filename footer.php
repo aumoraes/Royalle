@@ -14,11 +14,12 @@
 
 ?>
 <?php
-	if( wp_is_mobile() ){
-		get_template_part('template-parts/footer-mobile');
-	} else {
-		get_template_part('template-parts/footer-desktop');
-	}
+	// if( wp_is_mobile() ){
+	// 	get_template_part('template-parts/footer-mobile');
+	// } else {
+	// 	get_template_part('template-parts/footer-desktop');
+	// }
+	get_template_part('template-parts/footer-desktop');
 ?>
 
 
