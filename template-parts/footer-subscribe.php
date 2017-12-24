@@ -10,14 +10,14 @@
       para nossa newsletter
     </p>
 
-    <?php if ( is_active_sidebar( 'footer_subscribe_1' ) ) : ?>
-    	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-    		<?php dynamic_sidebar( 'footer_subscribe_1' ); ?>
+    <?php //if ( is_active_sidebar( 'footer_subscribe_1' ) ) : ?>
+    	<!-- <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+    		<?php// dynamic_sidebar( 'footer_subscribe_1' ); ?>
     	</div><!-- #primary-sidebar -->
     <?php
       //[rainmaker_form id="189"]
-      //es_subbox( $namefield = "YES", $desc = "", $group = "public" );
-      endif;
+      es_subbox( $namefield = "YES", $desc = "", $group = "public" );
+      //endif;
     ?>
 
 

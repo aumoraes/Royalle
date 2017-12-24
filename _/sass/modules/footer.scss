@@ -76,6 +76,9 @@ $instagram-color: #3675b4;
 		flex: auto;
 		// width: 100%;
 	}
+	.footer-siga-nos-container{
+		text-align: center;
+	}
 
 	.footer-logo,
 	.footer-fale-conosco,
@@ -116,6 +119,7 @@ $instagram-color: #3675b4;
 	.footer-fale-conosco-container{
 		// padding: 0px 145px;
 		.footer-fale-conosco{
+			width: 270px;
 			.info-contato-footer{
 				span{
 					display: inline-block;
@@ -164,7 +168,7 @@ $instagram-color: #3675b4;
 			}
 		}
 	  > div {
-  		padding: 15px;
+  		padding: 25px 5px;
 		}
 		.titulo-newsletter {
 			color: #fff;
@@ -190,6 +194,44 @@ $instagram-color: #3675b4;
 	}
 
 }
+//Footer-subscribe plugin
+.es_lablebox{
+	display: none;
+}
+.ui-input-text{
+	.icon-envelop,
+	.icon-user{
+		float: left;
+    font-size: 22px;
+    line-height: 1.5;
+    padding-left: 6px;
+    opacity: 0.6;
+	}
+	input{
+		width: 90%;
+	}
+}
+.es_msg{
+	color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer-copyright{
 	background-color: #333;
   color: #fff;
@@ -284,6 +326,10 @@ $instagram-color: #3675b4;
 				float: left;
 				margin-top: 70px;
 			}
+		}
+
+		.footer-fale-conosco-container .footer-fale-conosco {
+    	width: 100%;
 		}
 
 	}

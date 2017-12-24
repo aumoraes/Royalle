@@ -25,17 +25,24 @@
     }
   }
 });*/
-
+$( window ).load(function() {
+  $("#es_txt_name_pg").before(  "<span class=\"icon-user\">"  );
+  $("#es_txt_email_pg").before( "<span class=\"icon-envelop\">"  );
+});
 
 $(document).ready(function() {
   $('.banner .barraca').animate({'background-size':'50%'});
   $('.banner .barraca').animate({'opacity':'1'});
+
+
+  $("#es_txt_name_pg").attr("placeholder", "Nome");
+  $("#es_txt_email_pg").attr("placeholder", "Email");
+
 });
 
 
 $(function() {
   $('#popupDialog').css({'display':'block'});
-
   // Faz o botao de chat desaparecer quando abrir a galeria de fotos
   var $lg = $('#lightgallery');
   $lg.lightGallery();
