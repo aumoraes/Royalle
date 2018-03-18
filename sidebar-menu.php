@@ -41,7 +41,7 @@
               <span class="arrow"></span>
             </li>
             <li>
-              <a href="/#sobre" class="menu-item ui-icon-carat-r ui-btn-icon-right sobre" target="_self">
+              <a href="/sobre" class="menu-item ui-icon-carat-r ui-btn-icon-right sobre" target="_self">
                 sobre nós
               </a>
             </li>

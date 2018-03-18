@@ -35,7 +35,7 @@
         </a>
       </li>
       <li>
-        <a href="/#sobre" class="menu-item sobre" target="_self">
+        <a href="/sobre" class="menu-item sobre" target="_self">
           sobre nós
         </a>
       </li>

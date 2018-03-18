@@ -20,6 +20,7 @@ Text Domain: mokaeventos
  @import "partials/reset";
  @import "modules/font";
  @import "modules/galeria";
+ @import "modules/sobre-nos";
  @import "modules/menu";
  @import "responsible/menu-arrow";
  @import "responsible/menu-background";
@@ -122,6 +123,11 @@ body{
 }
 .size-40{
   width: 40%;
+  display: inline-block;
+  float: left;
+}
+.size-50{
+  width: 50%;
   display: inline-block;
   float: left;
 }
