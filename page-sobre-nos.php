@@ -76,7 +76,7 @@
       </div>
     </div>
     <div class="team">
-      <h2 class="page-title">Resposáveis</h2>
+      <h2 class="page-title">Responsáveis</h2>
     </div>
   </div>
 </div>
