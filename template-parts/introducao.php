@@ -16,7 +16,7 @@
 			<h3>O Melhor está aqui</h3>
 			<p>
 
-				A <a href="http://royalleeventos.com.br" target="_self"><strong>Royalle Eventos</strong></a> oference o melhor para a sua festa. Barraquinhas descontraída e dinâmica com lanches deliciosos são o nosso forte.
+				A <a href="http://royalleeventos.com.br" target="_self"><strong>Royalle Eventos</strong></a> oferece o melhor para a sua festa. Barraquinhas descontraídas e dinâmicas com lanches deliciosos são o nosso forte.
 
 				O serviço de <strong>barraquinhas à domicílio</strong> conta com capricho em cada detalhe, desde a roupa até aos lanches. Nos dedicamos ao máximo.
 
@@ -26,9 +26,9 @@
 				 	<li>Atendemos inaugurações de lojas para atrair clientes;</li>
 				 	<li>Festa de empresas com tema ( festa junina );</li>
 				</ul>
-				Prezamos muito pelo atendimento e qualidade dos alimentos que oferecemos. Você vai sentir isso do primeiro 'oi' até a primeira mordida em uns dos nosso lanches.
+				Prezamos muito pelo atendimento e qualidade dos alimentos que oferecemos. Você vai sentir isso do primeiro 'oi' até a primeira mordida em uns dos nossos lanches.
 
-				A <a href="http://royalleeventos.com.br" target="_self"><strong>Royalle Eventos</strong></a> quer fazer parte da sua festa, entre em contato e confira nosso condições especiais.
+				A <a href="http://royalleeventos.com.br" target="_self"><strong>Royalle Eventos</strong></a> quer fazer parte da sua festa, entre em contato e confira nossas condições especiais.
 
 			</p>
 		</div>
