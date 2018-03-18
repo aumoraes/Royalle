@@ -16,41 +16,64 @@
         Todo o comando do preparado dos alimentos fica por conta do Gabriel, o nosso expecialista no assunto com vários anos trabalhando nessa área.
       </p>
     </div>
+
     <div class="item impar">
-      <div class="size-50">
-        <div class="image">
-        <img alt="Barracas Royalle Eventos" src="https://moz.imgix.net/about/Our-Story/young-rand.jpg?auto=format&ch=Width&fit=max&ixlib=php-1.1.0&q=50&w=1200&s=039c8eb8981dd184a0ae0ba8eddfc081" />
+      <div class="content">
+        <div class="size-50">
+          <div class="image">
+            <img alt="barracas-royalle-eventos" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/barraquinhas-royalle-eventos.jpeg" />
+          </div>
         </div>
-      </div>
-      <div class="size-50">
-        <div class="content">
-          <h2 class="page-title">
-            Nossas Barracas
-          </h2>
-          <p class="description">
-            Algumas de nossas barracas
-          </p>
+        <div class="size-50">
+          <div class="item-content">
+
+            <h2 class="page-title">
+              Nossas Barracas
+            </h2>
+            <p class="description">
+              Temos barracas personalizadas e customizadas para atender nossos clientes e levar charme até o evento. Conseguimos preparar e servir as nossas melhores opções de forma dinâmica e estilo.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="item par">
-      <div class="size-50">
-        <div class="content">
-          <h2 class="page-title">
-            Nossas Barracas
-          </h2>
-          <p class="description">
-            Algumas de nossas barracas
-          </p>
+    <div class="item par algodao-doce">
+      <div class="content">
+        <div class="size-50">
+          <div class="item-content">
+            <h2 class="page-title">
+              Algodão Doce
+            </h2>
+            <p class="description">
+              Uma das coisas mais legais em fazer festas é ver o rosto das crianças alegres e brincando. Algodão doce consegue provocar um efeito de alegria nas crianças que adoramos.
+            </p>
+          </div>
+      </div>
+        <div class="size-50">
+          <div class="image">
+          <img alt="barracas-royalle-eventos" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/royalle-algodao-doce.jpg" />
+          </div>
         </div>
       </div>
-      <div class="size-50">
-        <div class="image">
-        <img alt="Barracas Royalle Eventos" src="https://moz.imgix.net/about/Our-Story/young-rand.jpg?auto=format&ch=Width&fit=max&ixlib=php-1.1.0&q=50&w=1200&s=039c8eb8981dd184a0ae0ba8eddfc081" />
+    </div>
+    <div class="item impar algodao-doce">
+      <div class="content">
+        <div class="size-50">
+          <div class="image">
+          <img alt="barracas-royalle-eventos" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/royalle-algodao-doce.jpg" />
+          </div>
+        </div>
+        <div class="size-50">
+          <div class="item-content">
+            <h2 class="page-title">
+              Algodão Doce
+            </h2>
+            <p class="description">
+              Uma das coisas mais legais em fazer festas é ver o rosto das crianças alegres e brincando. Algodão doce consegue provocar um efeito de alegria nas crianças que adoramos.
+            </p>
+          </div>
         </div>
       </div>
-
-
     </div>
     <div class="team">
       <h2 class="page-title">Nosso time</h2>
