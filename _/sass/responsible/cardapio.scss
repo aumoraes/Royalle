@@ -72,12 +72,17 @@
   #cardapio{
     padding: 25px 15px;
     .title{
-      font-size: 1.6em;
+      /*font-size: 1.6em;*/
     }
     .cardapio-itens{
       .item_cardapio{
         width: 100%;
       }
     }
+  }
+}
+@media screen and (max-width: 380px){
+  #cardapio{
+    padding: 60px 15px;
   }
 }
