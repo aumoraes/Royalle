@@ -77,6 +77,41 @@
     </div>
     <div class="team">
       <h2 class="page-title">Responsáveis</h2>
+      <div class="content">
+
+
+        <div class="row">
+          <div class="size-50">
+            <div class="card">
+              <div class="card-image">
+                <img class="card-img-top" src="<?php echo get_template_directory_uri()?>/assets/images/profile-photo-aurelio.jpg" alt="Aurelio Moraes" title="Aurélio de Moraes">
+              </div>
+
+              <div class="card-body">
+                <h2 class="card-title"><strong>Aurélio de Moraes</strong></h2>
+                <p class="card-text">Aurélio trabalhou cerca de 3 anos como garçom aos finais de semana atendendo festa a domocílio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="size-50">
+            <div class="card">
+              <div class="card-image">
+
+                <img class="card-img-top" src="<?php echo get_template_directory_uri()?>/assets/images/profile-photo-gabriel.jpg" alt="Aurelio Moraes" title="Gabriel Kairis">
+
+
+              </div>
+              <div class="card-body">
+                <h2 class="card-title"><strong>Gabriel Kairis</strong></h2>
+                <p class="card-text">Com mais de 5 anos de experiência na realização de festa em casa, Gabriel se dedica agora a fazer festa a domicílio com barraquinhas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
     </div>
   </div>
 </div>

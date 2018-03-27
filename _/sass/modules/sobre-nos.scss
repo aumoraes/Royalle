@@ -84,8 +84,41 @@
       }
     }
   }
+
   .team{
     @include border-botton;
+    .content{
+      @include page-width;
+      display: grid;
+      .row .size-50{
+        text-align: center;
+        .card{
+
+          margin: auto;
+          text-align: center;
+          .card-image{
+            margin: auto;
+            max-width: 300px;
+            border:none;
+            line-height: 0;
+          }
+          .card-img-top{
+            width: 100%;
+          }
+
+           .card-body{
+             margin: 0px auto 30px auto;
+              max-width: 300px;
+              border: 1px solid #bbb;
+              height: 190px;
+              padding: 10px;
+              .card-text{
+                text-align: left;
+              }
+           }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 710px){

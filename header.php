@@ -6,8 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('name'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+
+
+
+
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link href="<?php echo get_stylesheet_directory_uri();?>/assets/gallery/lightgallery.css" rel="stylesheet">
 
@@ -49,7 +55,7 @@
   include_once "menu.php";
 
   include_once "sidebar-menu.php";
-  
+
   if( wp_is_mobile() ){
     //include_once "sidebar-menu.php";
     //include_once "form-contato-mobile.php";
