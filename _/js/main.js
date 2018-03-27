@@ -169,6 +169,21 @@ $(function() {
     return false;
   });
 
+
+
+  $(".team .card-module").click(function(){
+    //$( this ).children( 'li.target' ).css("border", "3px double red");
+
+    $( this ).children( ".card-more-details" ).slideToggle( "slow", function() {
+       // Animation complete.
+     });
+  });
+
+  // $(".team .size-50").toggle(
+  //   console.log("FOI");
+  //   //function(){$(".card .card-module .card-more-details").css({"top": "-535"});},
+  // );
+
 });
 
 

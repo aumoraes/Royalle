@@ -83,27 +83,49 @@
         <div class="row">
           <div class="size-50">
             <div class="card">
-              <div class="card-image">
-                <img class="card-img-top" src="<?php echo get_template_directory_uri()?>/assets/images/profile-photo-aurelio.jpg" alt="Aurelio Moraes" title="Aurélio de Moraes">
+              <div class="card-module">
+
+                <div class="card-image">
+                  <img class="card-img-top" src="<?php echo get_template_directory_uri()?>/assets/images/profile-photo-aurelio.jpg" alt="Aurelio Moraes" title="Aurélio de Moraes">
+                </div>
+
+                <div class="card-body">
+                  <h2 class="card-title"><strong>Aurélio de Moraes</strong></h2>
+                  <p class="card-text">Responsavel pelo gerenciamento.</p>
+                </div>
+
+
+                <div class="card-more-details">
+                  <p class="card-text">Aurélio atual como garçom cerca de 3 anos e nesse período adquiriu muita responsabilidade e habilidades para gerenciar festas. Além disso, se preocupa muito com o atendimento ao cliente. Por isso criou a Royalle Eventos.</p>
+                  <br />
+                  <p>
+                    Atender a domicílio da a posibilidade de conhecer muitas coisas novas e fazer muitas coisas diferentes, essa é sua visão.
+                  </p>
+                </div>
+
+
               </div>
 
-              <div class="card-body">
-                <h2 class="card-title"><strong>Aurélio de Moraes</strong></h2>
-                <p class="card-text">Aurélio trabalhou cerca de 3 anos como garçom aos finais de semana atendendo festa a domocílio.</p>
-              </div>
             </div>
           </div>
           <div class="size-50">
             <div class="card">
-              <div class="card-image">
+              <div class="card-module">
+                <div class="card-image">
+                  <img class="card-img-top" src="<?php echo get_template_directory_uri()?>/assets/images/profile-photo-gabriel.jpg" alt="Aurelio Moraes" title="Gabriel Kairis">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title"><strong>Gabriel Kairis</strong></h2>
+                  <p class="card-text">Amante da culinária e artista na cozinha da Royalle</p>
+                </div>
 
-                <img class="card-img-top" src="<?php echo get_template_directory_uri()?>/assets/images/profile-photo-gabriel.jpg" alt="Aurelio Moraes" title="Gabriel Kairis">
-
-
-              </div>
-              <div class="card-body">
-                <h2 class="card-title"><strong>Gabriel Kairis</strong></h2>
-                <p class="card-text">Com mais de 5 anos de experiência na realização de festa em casa, Gabriel se dedica agora a fazer festa a domicílio com barraquinhas.</p>
+                <div class="card-more-details">
+                  <p class="card-text">Gabriel Kairis é conhecido pela sua agilidade, cuidado e ótimo atendimento. Com mais de 5 anos de experiencia, já trabalhou com mestres renomados como Moises Costas do O Gastrônomo.</p>
+                  <br />
+                  <p>
+                    Com suas habilidades, ele cria todas os itens do cardápio e esta sempre querendo inovar para levar sabor e elegria para os clientes.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
