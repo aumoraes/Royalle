@@ -40,14 +40,13 @@
         </a>
       </li>
       <li>
-        <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="menu-item contato">contatos</a>
-      </li>
-      <li>
-        <a href="/orcamento" class="menu-item orcamento-menu-item" target="_self">
-          orçamento
+        <a href="/festa-junina" class="menu-item festa-junina" target="_self">
+          Festa Junina
         </a>
       </li>
-
+      <!--<li>
+        <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="menu-item contato">contatos</a>
+      </li>-->
       <li>
         <a href="/galeria" class="menu-item galeria" target="_self">
           galeria de fotos
@@ -56,6 +55,11 @@
       <li>
         <a href="/faq" class="menu-item faq" target="_self">
           perguntas frequentes
+        </a>
+      </li>
+      <li>
+        <a href="/orcamento" class="menu-item orcamento-menu-item" target="_self">
+          orçamento
         </a>
       </li>
     </ul>

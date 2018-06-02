@@ -46,6 +46,28 @@
     background-color: #960303;
     right: 0px;
   }
+  a.menu-item.orcamento-menu-item {
+    color: #228B22 !important;
+    font-weight: bold;
+  }
+  a.menu-item.orcamento-menu-item:hover{
+    background-color: transparent !important;
+    a{
+      color: #fff !important;
+    }
+  }
+
+  a.menu-item.festa-junina {
+    color: #fcae17 !important;
+    font-weight: bold;
+  }
+  a.menu-item.festa-junina:hover{
+    background-color: transparent !important;
+    a{
+      color: #fff !important;
+    }
+  }
+
 }
 
 .sidebar-footer{

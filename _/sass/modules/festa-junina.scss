@@ -1,0 +1,184 @@
+@mixin page-width(){
+  max-width: 1040px;
+  margin: auto;
+}
+@mixin border-botton(){
+  border-bottom: 1px solid #cfcfcf;
+}
+.festa-junina {
+  .festa-junina-header{
+    background-image: url(//royalleeventos.com.br/wp-content/themes/royalleeventos/assets/images/background-festa-junina.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .title{
+      text-transform: uppercase;
+      color: #fff;
+      @include page-width;
+      padding: 70px 0px;
+      text-align: center;
+      h1{
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 6px;
+      }
+      h3{
+        font-size: 24px;
+        letter-spacing: 3.5px;
+      }
+    }
+  }
+  .container{
+    .festa{
+      background-color: #F0F7F7;
+      @include border-botton;
+      .description{
+        padding: 70px 0px;
+        margin: auto;
+        @include page-width;
+        font-size: 20px;
+      }
+    }
+    .item .content .description{
+      font-size: 20px;
+    }
+    .item{
+      display: flex;
+      .page-title{
+        text-align: left;
+      }
+    }
+    .item.impar{
+      @include border-botton;
+      .content{
+        margin-left: 20px;
+        @include page-width;
+        .item-content{
+          margin-left: 50px;
+        }
+
+      }
+      .image{
+        width: 100%;
+        padding: 30px 0px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .item.par{
+      background-color: #F0F7F7;
+      @include border-botton;
+      .content {
+        @include page-width;
+
+      }
+      .image{
+        width: 50%;
+        float: left;
+        margin-left: 100px;
+        padding: 30px 0px;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 710px){
+  header .container{
+    padding: 2px 25px !important;
+  }
+}
+
+@media screen and (max-width: 1100px){
+
+
+  .comidas-tipicas{
+    img {
+      height: 140px;
+    }
+  }
+  .festa-junina .container > div {
+    padding: 0 20px;
+  }
+  .festa-junina .container{
+    .content .size-50{
+      width: 100%;
+    }
+    .item .page-title{
+      text-align: center;
+    }
+    .item.impar .content .item-content {
+      margin-left: 0;
+    }
+    .item.impar.algodao-doce{
+      .image {
+        min-width: 300px;
+        width: 30%;
+        padding: 30px 0px;
+        margin: auto;
+      }
+    }
+  }
+
+}
+
+.comidas-tipicas{
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or space-around */
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 6px);
+  }
+}
+
+a:hover img {
+  transform: scale(1.15);
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+figcaption {
+  margin-top: 15px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: 180px;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+.p a {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+}
+}

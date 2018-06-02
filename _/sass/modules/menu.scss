@@ -88,7 +88,26 @@ header{
       color: $menu-color-hover !important;
       border-bottom: 3px solid $menu-color-hover;
     }
+    a.menu-item.orcamento-menu-item {
+      background: #228B22;
+      color: #fff !important;
+      padding: 10px;
+    }
+    a.menu-item.orcamento-menu-item:hover{
+      border-bottom: 3px solid #228B22;
+    }
+
+    a.menu-item.festa-junina {
+      background: #fcae17;
+      color: #fff !important;
+      padding: 10px;
+    }
+
+    a.menu-item.festa-junina:hover{
+      border-bottom: 3px solid #fcae17;
+    }
   }
+
 }
 .flex-border-menu{
   @include flex-border-menu();

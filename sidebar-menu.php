@@ -45,15 +45,14 @@
                 sobre nós
               </a>
             </li>
-            <li>
+            <!--<li>
               <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="menu-item contato ui-icon-carat-r ui-btn-icon-right">contatos</a>
-            </li>
+            </li>-->
             <li>
-              <a href="/orcamento" class="menu-item ui-icon-carat-r ui-btn-icon-right orcamento-menu-item" target="_self">
-                orçamento
+              <a href="/festa-junina" class="menu-item ui-icon-carat-r ui-btn-icon-right festa-junina" target="_self">
+                Festa Junina
               </a>
             </li>
-
             <li>
               <a href="/galeria" class="menu-item ui-icon-carat-r ui-btn-icon-right galeria" target="_self">
                 galeria de fotos
@@ -62,6 +61,11 @@
             <li>
               <a href="/faq" class="menu-item ui-icon-carat-r ui-btn-icon-right faq" target="_self">
                 perguntas frequentes
+              </a>
+            </li>
+            <li>
+              <a href="/orcamento" class="menu-item ui-icon-carat-r ui-btn-icon-right orcamento-menu-item" target="_self">
+                orçamento
               </a>
             </li>
         </ul>
